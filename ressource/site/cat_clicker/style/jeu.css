@@ -1,0 +1,585 @@
+#inventaire, #boutique{
+    background-image: url(../ressources/fond/BoisDeFond.jpg);
+    height: 100%;
+    width: 30%;
+}
+#flex{
+    display: flex;
+    height: 100%;
+}
+
+.flex{
+    display: flex;
+}
+
+.flexColumn{
+    height: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.none{
+    display: none !important;
+}
+
+/* CLICKER */
+#clicker{
+    background-image: url(../ressources/fond/couverture-1.jpeg);
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 20;
+    box-shadow: 0px 0px 7px 12px rgba(0, 0, 0, 0.5);
+}
+
+#cat-clicker{
+    filter: drop-shadow(8px 8px 20px white);
+    width: 55%;
+    transition: 0.3s;
+}
+#cat-clicker:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.animated{
+    animation: clicBoubou 0.1s ease-in 0s alternate 2;
+}
+@keyframes clicBoubou {
+    from{
+        transform: scale(1.05);
+    }
+    to{
+        transform: scale(0.95);
+    }
+}
+
+/* PATTES BONUS */
+#pattes{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.div-patte{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.patte{
+    transform: rotate(40deg);
+    width: 70%;
+    transition: 0.3s;
+    opacity: 0;
+}
+.patte.animated{
+    animation: apparitionPatte 0.3s ease-out 2 alternate;
+}
+@keyframes apparitionPatte {
+    from{
+        transform: rotate(40deg) scale(1);
+    }
+    to{
+        transform: rotate(40deg) scale(0.8);
+    }
+}
+.patte-gauche{
+    transform: translateY(-1rem);
+}
+#patte-1{
+    grid-column: 0 / 1;
+    grid-row: 10 / 11;
+}
+#patte-2{
+    grid-column: 1/2;
+    grid-row: 9/10;
+}
+#patte-3{
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
+#patte-4{
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+#patte-5{
+    grid-column: 3/4;
+    grid-row: 8/9;
+}
+#patte-6{
+    grid-column: 3/4;
+    grid-row: 7/8;
+}
+#patte-7{
+    grid-column: 4/5;
+    grid-row: 7/8;
+}
+#patte-8{
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+#patte-9{
+    grid-column: 5/6;
+    grid-row: 6/7;
+}
+#patte-10{
+    grid-column: 5/6;
+    grid-row: 5/6;
+}
+#patte-11{
+    grid-column: 6/7;
+    grid-row: 5/6;
+}
+#patte-12{
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
+#patte-13{
+    grid-column: 7/8;
+    grid-row: 4/5;
+}
+#patte-14{
+    grid-column: 7/8;
+    grid-row: 3/4;
+}
+#centrer{
+    text-align: center;
+}
+
+#nbCookie{
+    font-family: "btn2";
+    font-weight: 600;
+    font-size: 4.2rem;
+    margin: 0;
+}
+
+#descriCookie{
+    font-family: "btn";
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+/* CLASSEMENT */
+#class-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#classement-img{
+    width: 100%;
+    height: 100%;
+}
+
+#btn-classement{
+    position: relative;
+    width: 450px;
+    height: 80px;
+    transition: 0.2s;
+}
+#btn-classement:hover{
+    transform: scale(1.1);
+    color: black !important;
+}
+
+#classement-txt{
+    position:absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+}
+
+#clicker a{
+    font-family: "btn2";
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #351500;
+    letter-spacing: 2px;
+}
+
+/* boutique */
+#btn-boutique{
+    position: relative;
+}
+.btn-gauche, .btn-droite, .btn-tel{
+    position: relative;
+    transition: 0.2s;
+}
+.btn-gauche:hover, .btn-droite:hover, .btn-tel:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#btn-boutique-couleur, #btn-succes-couleur, #btn-bonus-couleur, #btn-skin-couleur{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.groupe-btn{
+    display: flex;
+    margin-left: 2%;
+    margin-top: 3%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-boutique{
+    width: 100%;
+    height: 100%;
+}
+
+.btn-img{
+    width: 90%;
+    height: 60px;
+    position: relative;
+}
+
+.boutique-texte{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+    font-family: "btn2";
+    font-size: 2rem;
+}
+
+/* BOUTON */
+#inventaire{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+.inventaire{
+    width: 80%;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 50;
+}
+.inventaire img{
+    width: 100%;
+}
+.inventaire .inventaire-gris{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.inventaire-couleur{
+    position: relative;
+    transition: 0.2s;
+}
+.bonus-achat-couleur:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.contenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contenu h4.texte-bas{
+    position: relative;
+    top: 25px;
+    right: 10px;
+}
+.inventaire .contenu-icone-img{
+    width: 7vh;
+    display: block;
+    margin: auto;
+}
+.contenu-icone-descri{
+    text-align: center;
+    font-family: "btn2";
+}
+.croquette{
+    width: 5rem !important;
+}
+.herbe{
+    width: 3rem !important;
+}
+.sieste{
+    width: 6rem !important;
+}
+
+.chat{
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.chat.chat-titre{
+    height: 20px;
+    width: 24px;
+    transform: translateY(20%);
+    margin-left: 5px;
+}
+
+/* SUCCES */
+#bonusBoutique, #inventaireBonus{
+    position: absolute;
+    left: 0;
+    transition: 0.3s;
+}
+#succes, #skin{
+    height: 100%;
+    transition: 0.3s;
+}
+#skin{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+#inventaireSkin{
+    width: 96%;
+}
+#boutiqueSucces, #inventaireSkin{
+    height: 90%;
+    position: relative;
+}
+.inventaire .contenu-icone-img.trophee{
+    width: 4rem;
+    display: block;
+    margin: 0;
+}
+.contenu-icone-descri.trophee{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/* DESCRI HOVER */
+.hover-description{
+    position: absolute;
+    width: 73%;
+    height: 0px;
+    left: 49%;
+    transform: translateX(-50%);
+    background-color: #FFF3D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.hover-bottom{
+    bottom: 15px;
+}
+.hover-top{
+    top: 20px;
+}
+.hover-description p{
+    margin: 0;
+    font-size: 16px;
+    font-family: "btn";
+    text-align: center;
+    padding: 10px;
+}
+.hover-description .descriBonus{
+    font-size: 18px;
+    font-family: "btn2";
+    color: #351500;
+}
+
+/* PLACEMENT */
+#croquetteBoutique, #herbeBoutique, #siesteBoutique, #fan, #adoption, #vieille, #chatMarche{
+    z-index: 0;
+}
+#croquetteBoutique .inventaire-couleur, #croquetteBoutique .inventaire-gris, #herbeBoutique .inventaire-couleur, #herbeBoutique .inventaire-gris, #siesteBoutique .inventaire-couleur, #siesteBoutique .inventaire-gris, #fan .inventaire-couleur, #fan .inventaire-gris, #adoption .inventaire-couleur, #adoption .inventaire-gris, #vieille .inventaire-couleur, #vieille .inventaire-gris, #chatMarche .inventaire-couleur, #chatMarche .inventaire-gris{
+    z-index: 10;
+}
+
+/* SKIN */
+.skin, .skin-tel{
+    width: fit-content;
+    height: fit-content;
+}
+.skin .inventaire-gris, .skin-tel .inventaire-gris{
+    position: relative;
+}
+#skin label, #skin-tel label{
+    font-family: "btn2";
+    color: #202020;
+    font-size: 20px;
+}
+/* CHECKBOX */
+input[type="checkbox"]{
+    position: relative;
+    appearance: none;
+    width: 40px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #797979;
+    border: 2px solid #202020;
+    vertical-align: middle;
+    transition: 0.75s;
+    cursor: pointer;
+}
+input[type="checkbox"]::before{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    content: '';
+    height: 19px;
+    width: 19px;
+    border-radius: 20px;
+    background-color: #202020;
+    transition: 0.75s;
+}
+input[type="checkbox"]:checked{
+    background-color: #FFF3D0;
+    border: 2px solid #351500;
+}
+input[type="checkbox"]:checked::before{
+    background-color: #351500;
+    left: 16px;
+}
+
+/* Structure mobile */
+#menu-mobile{
+    display: none;
+    background-image: url("../ressources/fond/BoisDeFond.jpg");
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#menu-mobile::-webkit-scrollbar{
+    display: none;
+}
+
+#bonus-tel, #boutique-tel, #succes-tel, #skin-tel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 6%;
+}
+
+#fond-popup-boutique, #fond-popup-succes{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e3;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup{
+    width: 70%;
+    height: 60%;
+    background-image: url("../ressources/cadres/CadreMobileGrand.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#popup-succes{
+    justify-content: center;
+}
+
+.croix-popup{
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    height: 25px;
+}
+
+.contenu-popup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 75%;
+    font-family: "para";
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#contenu-succes{
+    height: 80%;
+}
+
+.contenu-popup span{
+    font-family: "btn2";
+    color: #351500;
+}
+
+.bonus-popup h4{
+    font-size: 1.4rem !important;
+    font-family: "btn2";
+    text-align: center;
+    color: #351500;
+}
+
+#bonus-popup img{
+    height: 3.8rem;
+}
+
+.trophee-popup{
+    height: 5rem !important;
+}
+
+.chat-popup{
+    height: 24px;
+    transform: translateY(20%);
+}
+
+#btn-popup{
+    position: relative;
+    width: 80%;
+}
+
+#btn-popup img{
+    width: 100%;
+}
+
+#btn-popup h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-75%);
+    width: 100%;
+    white-space: nowrap;
+    font-size: 1.4rem !important;
+}
+
+#chat-btn{
+    width: 40px !important;
+    transform: translateY(20%);
+}
+#boutique-tel .inventaire, #succes-tel .inventaire{
+    transition: 0.3s;
+    width: fit-content;
+}
+#boutique-tel .inventaire:hover, #succes-tel .inventaire:hover{
+    cursor: pointer;
+    transform: scale(1.04);  
+}

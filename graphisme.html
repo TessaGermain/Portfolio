@@ -1,0 +1,58 @@
+<!DOCTYPE Illustrator>
+<Illustrator lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tessa GERMAIN | Projets webdesign/graphisme</title>
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/graphisme.css">
+    <link rel="shortcut icon" href="image/avion-papier.png" type="image/x-icon">
+</head>
+<body id="body">
+    <section id="banniere">
+        <nav>
+            <!--<div class="drapeau"></div>
+            <div class="drapeau"></div>-->
+            <img src="image/avion-papier.png" alt="" id="avion-papier" onclick="menu()">
+        </nav>
+        <div id="menu">
+        </div>
+        <h1>WEBDESIGN/GRAPHISME</h1>
+    </section>
+    <section id="filtre">
+        <div id="filtre-actif">
+            <div class="bulle" onclick="filtreApparition()">
+                <img src="image/bulle-graph.png" alt="Filtre des langages utilisés" title="Filtre des logiciels utilisés">
+                <img src="image/bulle-graph-pourpre.png" title="Filtre des logiciels utilisés" alt="Filtre des logiciels utilisés" class="pourpre">
+            </div>
+        </div>
+        <div id="checkbox">
+            <div>
+                <input type="checkbox" onclick="affichageProjet(totalProjet)" class="filtre" id="Adobe XD">
+                <label for="Adobe XD">Adobe XD</label>          
+            </div>
+            <div>
+                <input type="checkbox" onclick="affichageProjet(totalProjet)" class="filtre" id="Figma">
+                <label for="Figma">Figma</label>
+            </div>
+            <div>
+                <input type="checkbox" onclick="affichageProjet(totalProjet)" class="filtre" id="Illustrator">
+                <label for="Illustrator">Illustrator</label>
+            </div>
+            <div>
+                <input type="checkbox" onclick="affichageProjet(totalProjet)" class="filtre" id="InDesign">
+                <label for="InDesign">InDesign</label>
+            </div>
+            <div>
+                <input type="checkbox" onclick="affichageProjet(totalProjet)" class="filtre" id="Photoshop">
+                <label for="Photoshop">Photoshop</label>
+            </div>
+        </div>    
+    </section>
+    <section id="projet">
+    </section>
+    <script src="script/global.js"></script>
+    <script src="script/graphisme.js"></script>
+</body>
+</Illustrator>

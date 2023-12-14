@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "titre";
+    src: url(../ressources/font/Pulang.ttf);
+}
+
+@font-face {
+    font-family: "para";
+    src: url(../ressources/font/Dekko-Regular.ttf);
+}
+
+@font-face {
+    font-family: "btn";
+    src: url(../ressources/font/Fredoka.ttf);
+}
+
+@font-face {
+    font-family: "btn2";
+    src: url(../ressources/font/FredokaOne.ttf);
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1{
+    font-family: "titre";
+    font-size: 7rem;
+    color: white;
+    text-shadow: 0px 4px 4px black;
+    margin: 0;
+}
+
+.texte-gris{
+    color: #202020;
+}
+
+#couverture{
+    height: 100%;
+    background-image: url(../ressources/fond/couverture-1.jpeg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#couverture input{
+    padding: 0.4rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    font-family: "para";
+    font-size: 1.7rem;
+}
+
+
+/* CLASSES POUR LES BOUTONS */
+.btn-planche{
+    position: relative;
+}
+
+.btn-planche-img{
+    width: 100%;
+    height: 100%;
+}
+
+h2.btn-planche-texte{
+    white-space: nowrap;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+}
+
+.btn-planche-lien{
+    font-family: "btn2";
+    color: #351500;
+    display: none;
+}
+
+#btn-jouer{
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+
+/* PANNEAU DES REGLES DU JEU */
+
+#regles, #regles-tel{
+    position: relative;
+}
+
+#regles-tel{
+    display: none;
+}
+
+.cadre{
+    width: 100%;
+    height: 100%;
+}
+
+#texte-regles{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 60%;
+}
+
+#texte-regles-tel{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 70%;
+}
+
+#texte-regles-tel h3{
+    font-family: 'btn2';
+    font-size: 1.5rem;
+}
+
+#regles h3{
+    font-family: 'btn2';
+    font-size: 2rem;
+}
+
+#texte-regles-tel p{
+    font-family: "para";
+    font-size: 1.1rem;
+}
+
+#regles p{
+    font-family: "para";
+    font-size: 1.5rem;
+}
+
+h3{
+    font-family: "btn2";
+    font-size: 2rem;
+    margin: 0;
+}
+
+h4{
+    font-family: "btn";
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.texte-gris{
+    color: #202020;
+}
+
+.texte-couleur{
+    color: #351500;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#erreur{
+    display: none;
+    font-size: 1.3rem;
+    font-family: "btn2";
+    color: darkred;
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive */
+
+@media screen and (width < 1000px){
+    .cadre{
+        width: 95%;
+        height: 95%;
+    }
+    #regles h3{
+        font-size: 1.6rem;
+    }
+    #regles p{
+        font-size: 1.2rem;
+    }
+    h2.btn-planche-texte{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (width < 800px){
+    #regles h3{
+        font-size: 1.3rem;
+    }
+    #regles p{
+        font-size: 1.1rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    #couverture input{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (width < 577px) {
+    #regles{
+        display: none;
+    }
+    #regles-tel{
+        display: block;
+    }
+    h1{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (width < 450px) {
+    #texte-regles-tel p{
+        font-size: 1rem;
+    }
+    #texte-regles-tel h3{
+        font-size: 1.4rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    #couverture input{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (width < 400px) {
+    #texte-regles-tel p{
+        font-size: 0.9rem;
+    }
+    #texte-regles-tel h3{
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 3.8rem;
+    }
+}
+
+@media screen and (width < 350px) {
+    #texte-regles-tel p{
+        font-size: 0.8rem;
+    }
+    #texte-regles-tel h3{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 3.4rem;
+    }
+    #couverture input{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (width < 300px) {
+    #texte-regles-tel p{
+        font-size: 0.65rem;
+    }
+    #texte-regles-tel h3{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    #couverture input{
+        font-size: 1.2rem;
+    }
+}

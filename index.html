@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="shortcut icon" href="image/avion-papier.png" type="image/x-icon">
+    <title>Tessa GERMAIN | Accueil</title>
+</head>
+<body id="body">
+    <section id="banniere">
+        <nav>
+            <!--<div class="drapeau"></div>
+            <div class="drapeau"></div>-->
+            <img src="image/avion-papier.png" alt="" id="avion-papier" onclick="menu()">
+        </nav>
+        <div id="menu">
+        </div>
+        <h1>TESSA GERMAIN</h1>
+        <!--<div id="contact">
+            <a href="mailto:tessa.germain2003@gmail.com" class="cercle-icone"><img src="image/mail.png" alt=""></a>
+        </div>-->
+        </section>    
+    </section>
+    <section>
+        <div class="trait trait-droite">
+            <div class="trait-pointille"></div>
+            <h2>A PROPOS</h2>
+            <img src="image/avion-papier.png" alt="">    
+        </div>
+        <div id="a-propos">
+            <div id="chibi">
+                <a href="developpement.html"><div class="bulle" id="code">
+                    <img src="image/bulle-code.png" alt="" class="blanc">
+                    <img src="image/bulle-code-pourpre.png" alt="" class="pourpre">
+                </div></a>
+                <a href="graphisme.html"><div class="bulle" id="graphisme">
+                    <img src="image/bulle-graph.png" alt="" class="blanc">
+                    <img src="image/bulle-graph-pourpre.png" alt="" class="pourpre">
+                </div></a>
+                <img src="image/chibi.png" alt="">
+            </div>
+            <div id="texte-a-propos">
+                <p>Passionnée par la <b>programmation</b> et le <b>dessin</b> depuis le début du lycée, je suis actuellement en deuxième année de <b>BUT MMI</b> (Métiers du Multimédia et de l'Internet).</p>
+                <p>Aussi bien intéressée par le <b>front-end</b> que par le <b>back-end</b>, j'aime apprendre de nouvelles compétences afin de devenir <b>développeuse full-stack</b>.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trait trait-gauche">
+            <div class="trait-pointille"></div>
+            <h2>MES COMPETENCES</h2>
+            <img src="image/avion-papier.png" alt="">
+        </div>
+        <div id="competence">
+            <p class="competence s75" id="php">PHP</p>
+            <p class="competence s100" id="html">HTML</p>
+            <p class="competence s100" id="css">CSS</p>
+            <p class="competence s75" id="sql">SQL</p>
+            <p class="competence s50" id="js">JavaScript</p>
+            <p class="competence s50" id="wp">Wordpress</p>
+            <p class="competence s75" id="ps">Photoshop</p>
+            <p class="competence s75" id="illustrator">Illustrator</p>
+            <p class="competence s50" id="xd">Adobe XD</p>
+            <p class="competence s25" id="indesign">InDesign</p>
+        </div>
+        <a href="ressource/pdf/GERMAIN_Tessa_CV.pdf" class="bouton" id="cv" target="_blank">Voir mon CV</a>
+    </section>
+    <section>
+        <div class="trait trait-droite">
+            <div class="trait-pointille"></div>
+            <h2>MON PARCOURS</h2>
+            <img src="image/avion-papier.png" alt="">
+        </div>
+        <div id="parcours">
+            <div>
+                <h3>2021<br>-<br>Actuellement</h3>
+                <div class="cercle but" onclick="popUp(event)">
+                    <h4 class="but">BUT MMI</h4>
+                </div>
+            </div>
+            <div>
+                <h3>Juin - Juillet<br><br>2022</h3>
+                <div class="cercle lutc" onclick="popUp(event)">
+                    <h4 class="lutc">Stage Webmaster</h4>
+                </div>
+            </div>
+            <div>
+                <h3>2018<br>-<br>2021</h3>
+                <div class="cercle bac" onclick="popUp(event)">
+                    <h4 class="bac">Bac Général<br> - <br>Mention TB</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="trait trait-gauche">
+            <div class="trait-pointille"></div>
+            <h2>MES PROJETS</h2>
+            <img src="image/avion-papier.png" alt="">
+        </div>
+        <div id="projets">
+            <div>
+                <a href="developpement.html"><div class="bulle" id="bulleCode">
+                    <img src="image/bulle-code-pourpre.png" alt="" class="pourpre">
+                    <img src="image/bulle-code.png" alt="">
+                </div></a>
+                <a href="developpement.html" class="bouton">Développement Web</a>
+            </div>
+            <div>
+                <a href="graphisme.html"><div class="bulle" id="bulleGraph">
+                    <img src="image/bulle-graph-pourpre.png" alt="" class="pourpre">
+                    <img src="image/bulle-graph.png" alt="">
+                </div></a>
+                <a href="graphisme.html" class="bouton">Graphisme / Webdesign</a>
+            </div>
+        </div>
+    </section>
+    <script src="script/global.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>

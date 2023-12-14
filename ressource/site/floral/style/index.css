@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "titre";
+    src: url(../ressources/font/Warung_Kopi.otf);
+}
+
+@font-face {
+    font-family: "para";
+    src: url(../ressources/font/TTNorms-Regular.otf);
+}
+
+/* header */
+
+.p-3.text-bg-dark{
+    background-color: #B30C46 !important;
+}
+
+#sign-up{
+    background-color: #c1aba6;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "titre";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#login{
+    font-family: "titre";
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#sign-up:hover{
+    background-color: #A5837B;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+#login:hover{
+    background-color: #ffd1e0;
+    border: transparent 1px solid;
+}
+
+header .nav-link.text-white{
+    color: white !important;
+    font-family: "titre";
+    font-size: 22px;
+    font-weight: bold;
+}
+
+header .nav-link.text-white:hover{
+    color: #c1aba6 !important;
+}
+
+#search:focus{
+    box-shadow: none !important;
+    border: white 1px solid;
+}
+
+#search{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+#search::placeholder{
+    color: white !important;
+    font-family: "para" !important;
+}
+
+/* footer */
+
+#footer{
+    background-color: #c1aba6;
+    font-family: "para";
+    margin-bottom: 0px !important;
+    margin-top: 70px !important;
+}

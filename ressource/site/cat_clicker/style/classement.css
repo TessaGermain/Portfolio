@@ -1,0 +1,214 @@
+#classement.noScroll::-webkit-scrollbar{
+    display: none;
+}
+
+#flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#bois{
+    height: 100%;
+    width: 15%;
+    background-image: url(../ressources/fond/BoisDeFond.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bois a{
+    display: flex;
+    justify-content: center;
+}
+
+#classement{
+    width: 85%;
+    overflow-y: scroll;
+    background-image: url(../ressources/fond/couverture-1.jpeg);
+    box-shadow: -12px -12px 27px rgba(0, 0, 0, 0.668);
+}
+
+#classement h2{
+    font-family: "btn2";
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    text-align: center;
+}
+
+.none{
+    display: none !important;
+}
+
+/* boutons classement */
+#boutons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: space-around;
+}
+
+#boutons img{
+    width: 80%;
+    height: 70px;
+}
+
+.btn-classement h4{
+    font-family: "btn2";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 0;
+}
+
+.btn-classement{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.btn-classement:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* partie top 3 */
+
+#podium{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    width: 100%;
+}
+
+#flex2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#score1{
+    width: 35%;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.cadre{
+    width: 100%;
+}
+
+.medaille{
+    height: 50px;
+}
+
+.score img{
+    height: 35px;
+}
+
+.contenu{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.score{
+    display: flex;
+    flex-direction: column;  
+}
+
+.score h4{
+    font-family: "btn2";
+    color: #351500;
+    font-size: 1.8rem;
+}
+
+.score-chat{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.score-chat img{
+    padding-left: 10%;
+}
+
+#score2{
+    width: 32%;
+    position: relative;
+}
+
+#score3{
+    width: 30%;
+    position: relative;
+}
+
+/* le classement */
+#to_50{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.colonne{
+    width: 35%;
+    font-family: "btn2";
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.un_score{
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.nom, .nombre{
+    display: flex;
+    align-items: center;
+}
+
+.boubou{
+    height: 30px;
+}
+
+.nom img{
+    width: 30px;
+    margin-right: 28px !important;
+}
+
+.colonne p{
+    margin:0;
+}
+
+.pseudo{
+    font-size: 1.4rem;
+}
+
+.chiffre{
+    font-size: 1.6rem;
+    text-align: left;
+    padding-right: 8px !important;
+    width: 50px;
+}
+
+.nombre p{
+    font-size: 1.1rem;
+}
+
+.trait{
+    background-color: black;
+    width: 4px;
+}

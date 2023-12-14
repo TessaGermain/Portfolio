@@ -1,0 +1,555 @@
+/* Responsive pc*/
+@media screen and (width<1800px){
+    h4{
+        font-size: 1.3rem !important;
+    }
+    h3{
+        font-size: 1.8rem !important;
+    }
+    .contenu-icone-descri.trophee {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (width < 1650px) {
+    h4{
+        font-size: 1.2rem !important;
+    }
+}
+
+@media screen and (width < 1600px) {
+    .sieste{
+        width: 4.5rem !important;
+    }
+    .croquette{
+        width: 4.4rem !important;
+    }
+    .herbe{
+        width: 2.5rem !important;
+    }
+    h3{
+        font-size: 1.5rem !important;
+    }
+    .contenu-icone-descri.trophee {
+        font-size: 1.4rem !important;
+    }
+    .inventaire .contenu-icone-img.trophee{
+        width: 3.5rem;
+    }
+}
+
+@media screen and (width < 1530px) {
+    .contenu h4.texte-bas{
+        right: 4px;
+        white-space: nowrap;
+    }
+    .contenu-icone-descri{
+        white-space: nowrap;
+    }
+}
+
+@media screen and (width < 1500px) {
+    #nbCookie{
+        font-size: 3.5rem;
+    }
+    #descriCookie{
+        font-size: 2rem;
+    }
+    #cat-clicker{
+        width: 60%;
+    }
+    .boutique-texte{
+        font-size: 1.6rem;
+    }
+
+    .hover-description .descriBonus{
+        font-size: 16px;
+    }
+    .hover-description p{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 1.4rem !important;
+    }
+    h4{
+        font-size: 1.1rem !important;
+    }
+    .contenu-icone-descri.trophee {
+        font-size: 1.2rem !important;
+    }
+    .inventaire .contenu-icone-img.trophee{
+        width: 3rem;
+    }
+    .croquette{
+        width: 4rem !important;
+    }
+    .herbe{
+        width: 2.1rem !important;
+    }
+    .sieste{
+        width: 4rem !important;
+    }
+    #clicker a{
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (width < 1400px) {
+    h3{
+        font-size: 1.2rem !important;
+    }
+    h4{
+        font-size: 1rem !important;
+    }
+    .croquette{
+        width: 3.7rem !important;
+    }
+    .herbe{
+        width: 2rem !important;
+    }
+    .sieste{
+        width: 3.8rem !important;
+    }
+    .chat.chat-titre{
+        width: 20px;
+        height: 18px;
+    }
+    .contenu h4.texte-bas{
+        top: 22px;
+    }
+}
+
+@media screen and (width < 1300px) {
+    #nbCookie{
+        font-size: 3rem;
+    }
+    #descriCookie{
+        font-size: 1.8rem;
+    }
+    .boutique-texte{
+        font-size: 1.4rem;
+    }
+    h3{
+        font-size: 1.1rem !important;
+    }
+    h4{
+        font-size: 0.9rem !important;
+    }
+    .croquette{
+        width: 3.5rem !important;
+    }
+    .herbe{
+        width: 1.8rem !important;
+    }
+    .sieste{
+        width: 3.5rem !important;
+    }
+    .contenu h4.texte-bas{
+        top: 20px;
+    }
+}
+
+@media screen and (width < 1200px) {
+    .inventaire .contenu-icone-img.trophee{
+        width: 2.3rem;
+    }
+    .contenu-icone-descri.trophee{
+        font-size: 1rem !important;
+    }
+    .inventaire .skin{
+        width: 90%;
+    }
+    #btn-classement{
+        width: 380px;
+    }
+    #clicker a{
+        font-size: 1.2rem;
+    }
+    .hover-description .descriBonus{
+        font-size: 14px;
+    }
+    .hover-description p{
+        font-size: 13px;
+    }
+    .boutique-texte{
+        font-size: 1.3rem;
+    }
+    .contenu h4.texte-bas{
+        top: 17px;
+    }
+}
+
+@media screen and (width < 1000px){
+    #nbCookie{
+        font-size: 2.7rem;
+    }
+    #descriCookie{
+        font-size:1.3rem;
+    }
+    .contenu h4.texte-bas{
+        top: 15px;
+    }
+    #cat-clicker{
+        width: 70%;
+    }    
+    #btn-classement{
+        width: 300px;
+        height: 65px;
+    }
+    #clicker a{
+        font-size: 1rem;
+    }
+    .boutique-texte{
+        font-size: 1.2rem;
+    }
+    .btn-img{
+        height: 50px;
+    }
+    h3{
+        font-size: 0.9rem !important;
+    }
+    h4{
+        font-size: 0.8rem !important;
+    }
+    .croquette{
+        width: 3rem !important;
+    }
+    .herbe{
+        width: 1.5rem !important;
+    }
+    .sieste{
+        width: 3rem !important;
+    }
+    .hover-description .descriBonus{
+        font-size: 13px;
+    }
+    .hover-description p{
+        font-size: 12px;
+    }
+    #skin label{
+        font-size: 17px;
+    }
+    input[type="checkbox"]{
+        width: 30px;
+        height: 20px;
+    }
+    input[type="checkbox"]::before{
+
+        left: 1px;
+        height: 15px;
+        width: 15px;
+    }
+    input[type="checkbox"]:checked::before{
+        left: 10px;
+    }
+}
+
+@media screen and (width < 900px) {
+    .croquette{
+        width: 2.8rem !important;
+    }
+    .sieste{
+        width: 2.8rem !important;
+    }
+    h3{
+        font-size: 0.8rem !important;
+    }
+    h4{
+        font-size: 0.7rem !important;
+    }
+    .chat{
+        height: 20px;
+    }
+    .contenu h4.texte-bas{
+        top: 10px;
+    }
+    #nbCookie{
+        font-size: 2.4rem;
+    }
+    #descriCookie{
+        font-size:1.1rem;
+    }
+    .inventaire .contenu-icone-img.trophee{
+        width: 2rem;
+    }
+    .contenu-icone-descri.trophee{
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (width < 800px) {
+    .inventaire{
+        width: 95%;
+    }
+    #btn-classement{
+        width: 250px;
+        height: 55px;
+    }
+    #clicker a{
+        font-size: 0.8rem;
+    }
+    #nbCookie{
+        font-size: 2.2rem;
+    }
+    #descriCookie{
+        font-size:1rem;
+    }
+    .btn-img{
+        height: 40px;
+    }
+    .boutique-texte{
+        font-size: 1.1rem;
+    }
+    .contenu h4.texte-bas{
+        display: none;
+    }
+    #skin label{
+        font-size: 14px;
+    }
+    input[type="checkbox"]{
+        width: 25px;
+        height: 16px;
+    }
+    input[type="checkbox"]::before{
+        left: 1px;
+        height: 11px;
+        width: 11px;
+    }
+    input[type="checkbox"]:checked::before{
+        left: 10px;
+    }
+}
+
+/* Responsive mobile */
+@media screen and (width < 577px) {
+    .groupe-btn{
+        margin-left: 0;
+    }
+    #inventaire, #boutique{
+        display: none;
+    }
+    #flex{
+        flex-direction: column;
+    }
+    #clicker{
+        width: 100%;
+        height: 55%;
+        position: relative;
+        padding-top: 15%;
+    }
+    #cat-clicker{
+        height: 45%;
+        width: auto;
+    }
+    #btn-classement{
+        position: absolute;
+        top: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #menu-mobile{
+        display: block;
+    }
+    #nbCookie{
+        font-size: 2rem;
+    }
+    #descriCookie{
+        font-size:1rem;
+    }
+    #btn-classement:hover{
+        transform: translateX(-50%);
+    }
+    #btn-boutique-couleur-tel, #btn-succes-couleur-tel, #btn-bonus-couleur-tel, #btn-skin-couleur-tel{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .inventaire img{
+        width: 60%;
+    }
+    .contenu{
+        width: 60%;
+    }
+    .inventaire{
+        width: 100%;
+    }
+    .inventaire-gris, .inventaire-couleur{
+        display: flex;
+        justify-content: center;
+    }
+    .croquette{
+        width: 4rem !important;
+    }
+    .herbe{
+        width :3rem !important;
+    }
+    .sieste{
+        width: 5rem !important;
+    }
+    .contenu-icone-descri{
+        font-size: 1.1rem !important;
+    }
+    h3{
+        font-size: 1.1rem !important;
+    }
+    .contenu h4.texte-bas{
+        display: block;
+        top: 25px;
+    }
+    h4{
+        font-size: 0.8rem !important;
+    }
+    .inventaire .contenu-icone-img.trophee {
+        width: 3.5rem;
+    }
+    .contenu-icone-descri.trophee{
+        font-size: 1.1rem !important;
+    }
+    .labelCheckSkin{
+        font-family: "btn2";
+        font-size: 1.3rem;
+    }
+    input[type="checkbox"]{
+        width: 40px;
+        height: 20px;
+    }
+    input[type="checkbox"]::before{
+        width: 15px;
+        height: 15px;
+    }
+    input[type="checkbox"]:checked::before{
+        left: 20px;
+    }
+    #bonus-popup h4{
+        font-size: 1.4rem !important;
+        font-family: "btn2";
+    }
+}
+
+@media screen and (width < 550px) {
+    .contenu{
+        width: 50%;
+    }
+}
+
+@media screen and (width < 450px) {
+    .inventaire img{
+        width: 70%;
+    }
+    .contenu{
+        width: 60%;
+    }
+    #centrer{
+        margin-top: 5%;
+    }
+    #bonus-popup img{
+        height: 3.5rem;
+    }
+    .contenu-popup{
+        font-size: 1.1rem;
+        height: 90%;
+    }
+    #btn-popup h3{
+        font-size: 1.3rem !important;
+    }
+    #chat-btn{
+        width: 30px !important;
+    }
+}
+
+@media screen and (width < 400px) {
+    .boutique-texte{
+        font-size: 1rem;
+    }
+    .herbe{
+        width: 2.5rem !important;
+    }
+    .sieste{
+        width: 4rem !important;
+    }
+    .croquette{
+        width: 3.5rem !important;
+    }
+    .contenu-icone-descri{
+        font-size: 1rem !important;
+    }
+    .inventaire .contenu-icone-img.trophee{
+        width: 2.7rem;
+    }
+    .contenu-icone-descri.trophee{
+        font-size: 1rem !important;
+    }
+    .contenu h4.texte-bas{
+        top: 20px;
+    }
+    .trophee-popup{
+        height: 4rem !important;
+    }
+    .bonus-popup h4{
+        font-size: 1.2rem !important;
+    }
+    .contenu-popup{
+        font-size: 1.1rem;
+    }
+    .popup{
+        width: 80%;
+    }
+    #cat-clicker{
+        height: 40%;
+    }
+    #centrer{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (width < 340px) {
+    .contenu-popup{
+        font-size: 1rem;
+    }
+    .chat-popup{
+        height: 20px;
+    }
+    .croix-popup{
+        height: 20px;
+    }
+    .contenu-icone-descri.trophee{
+        font-size: 0.9rem !important;
+    }
+    .contenu-icone-descri{
+        font-size: 0.9rem !important;
+    }
+    .herbe{
+        width: 2rem !important;
+    }
+    .sieste{
+        width: 3.5rem !important;
+    }
+    .croquette{
+        width: 3rem !important;
+    }
+    .contenu h4.texte-bas{
+        top: 15px;
+    }
+    .inventaire img{
+        width: 80%;
+    }
+    .contenu{
+        width: 70%;
+    }
+    .boutique-texte{
+        font-size: 0.9rem;
+        transform: translateX(-50%) translateY(-60%);
+    }
+    .btn-boutique{
+        height: 90%;
+    }
+    #cat-clicker{
+        height: 35%;
+    }
+    #centrer{
+        margin-top: 15%;
+    }
+    #bonus-popup img{
+        height: 3rem;
+    }
+}

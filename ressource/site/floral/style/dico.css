@@ -1,0 +1,70 @@
+/* TITRE */
+@font-face {
+    font-family: "titre";
+    src: url(../ressources/font/Warung_Kopi.otf);
+}
+h1{
+    font-family: "titre";
+    font-size: 25px;
+    text-align: center;
+    color: #B30C46;
+}
+h2{
+    font-family: "titre";
+    font-size: 20px;
+    text-align: left;
+    color: #A5837B; 
+}
+h3{
+    font-family: "titre";
+    font-size: 16px;
+    text-align: center;
+    color: #c1aba6;
+}
+
+/* PARAGRAPHE */
+@font-face {
+    font-family: "para";
+    src: url(../ressources/font/TTNorms-Regular.otf);
+}
+p{
+    font-family: "para";
+    font-size: 15px;
+}
+
+/* BOUTON */
+.bouton-primaire{
+    background-color: #c1aba6;
+    border: none;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-family: "titre";
+    font-weight: bold;
+    font-size: 18px;
+}
+.bouton-primaire:hover{
+    background-color: #A5837B;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+.bouton-secondaire{
+    font-family: "titre";
+    font-weight: bold;
+    font-size: 18px;
+}
+.bouton-secondaire:hover{
+    background-color: #A5837B;
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+}
+
+/* LIENS */
+.lien{
+    color: white !important;
+    font-family: "titre";
+    font-size: 22px;
+    font-weight: bold;
+}
+.lien:hover{
+    color: #c1aba6 !important;
+}

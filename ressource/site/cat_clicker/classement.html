@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement - Cat Clicker</title>
+    <link rel="shortcut icon" href="ressources/elements/cat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/classement.css">
+    <link rel="stylesheet" href="style/responsive-classement.css">
+</head>
+<body>
+    <section id="flex">
+        <section id="bois">
+            <div id="boutons">
+                <div class="btn-classement actif" id="div-top3" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top3">
+                    <h4 class="texte-gris" id="h4-top3">Top 3</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top50" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top50">
+                    <h4 class="texte-gris" id="h4-top50">1 à 50</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top100" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top100">
+                    <h4 class="texte-gris" id="h4-top100">51 à 100</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top150" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top150">
+                    <h4 class="texte-gris" id="h4-top150">101 à 150</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top200" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top200">
+                    <h4 class="texte-gris" id="h4-top200">151 à 200</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top250" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top250">
+                    <h4 class="texte-gris" id="h4-top250">201 à 250</h4>
+                </div>
+
+                <div class="btn-classement" id="div-top300" onclick="score(event)">
+                    <img src="ressources/cadres/planche_gris.png" id="img-top300">
+                    <h4 class="texte-gris" id="h4-top300">251 à 300</h4>
+                </div>
+            </div>
+        </section>
+    
+        <section id="classement">
+            <h2>Classement des meilleurs scores</h2>
+            <div id="podium" class="none">
+                <div id="score1">
+                    <img class="cadre" src="ressources/cadres/bois3_Rempli.png">
+                    <div class="contenu">
+                        <img class="medaille" src="ressources/elements/medaille_1.png">
+                        <div class="score">
+                            <div class="score-chat">
+                                <h4 id="scores1"></h4>
+                                <img src="ressources/elements/cat.png">
+                            </div>
+                            <h4 id="pseudo1"></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="flex2">
+                    <div id="score2">
+                        <img class="cadre" src="ressources/cadres/bois3_Rempli.png">
+                        <div class="contenu">
+                            <img class="medaille" src="ressources/elements/medaille_2.png">
+                            <div class="score">
+                                <div class="score-chat">
+                                    <h4 id="scores2"></h4>
+                                    <img src="ressources/elements/cat.png">
+                                </div>
+                                <h4 id="pseudo2"></h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div id="score3">
+                        <img class="cadre" src="ressources/cadres/bois3_Rempli.png">
+                        <div class="contenu">
+                            <img class="medaille" src="ressources/elements/medaille_3.png">
+                            <div class="score">
+                                <div class="score-chat">
+                                    <h4 id="scores3"></h4>
+                                    <img src="ressources/elements/cat.png">
+                                </div>
+                                <h4 id="pseudo3"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="to_50">
+                <div class="colonne" id="colonne1">
+                    
+                </div>
+                
+
+                <div class="trait"></div>
+
+                <div class="colonne" id="colonne2">
+                </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="script/classement.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ressources/elements/cat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <section id="couverture">
+        <h1>Cat Clicker</h1>
+        <input type="text" placeholder="Pseudo" id="pseudo" onchange="verif()">
+        <div id="erreur"></div>
+    
+        <a class="btn-planche-lien" href="jeu.html" id="btn-lien-jouer"><div id="btn-jouer" class="btn-planche">
+            <img class="btn-planche-img" src="ressources/cadres/Planche.png" alt="planche de bois">
+            <h2 class="btn-planche-texte">Jouer !</h2>
+        </div></a>
+
+        <div id="regles">
+            <img class="cadre" src="ressources/cadres/bois3_Rempli.png" alt="cadre en bois">
+            <div id="texte-regles">
+                <h3>But du jeu :</h3>
+                <p>Amassez le plus de chats possible en cliquant sur la tête de Boubou ! 
+                Vous trouverez des bonus dans la boutique pour vous permettre d’en obtenir 
+                toujours plus...</p>
+            </div>
+        </div>
+
+        <div id="regles-tel">
+            <img class="cadre" src="ressources/cadres/Cadre_mobile.png" alt="cadre en bois">
+            <div id="texte-regles-tel">
+                <h3>But du jeu :</h3>
+                <p>Amassez le plus de chats possible en cliquant sur la tête de Boubou ! 
+                Vous trouverez des bonus dans la boutique pour vous permettre d’en obtenir 
+                toujours plus...</p>
+            </div>
+        </div>
+    </section>
+    <script src="script/index.js"></script>
+</body>
+</html>

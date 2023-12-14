@@ -1,0 +1,257 @@
+/* boutons classement */
+@media screen and (width < 1800px) {
+    #boutons img{
+        height: 65px;
+    }
+}
+
+@media screen and (width < 1500px) {
+    #boutons img{
+        height: 60px;
+        width: 90%;
+    }
+    #bois{
+        width: 20%;
+    }
+}
+
+@media screen and (width < 1000px) {
+    #bois{
+        width: 25%;
+    }
+}
+
+@media screen and (width < 800px) {
+    .btn-classement h4{
+        font-size: 1.1rem;
+    }
+    #boutons img{
+        height: 55px;
+    }
+}
+
+/* partie top 3 */
+
+@media screen and (width < 1300px) {
+    .score h4{
+        font-size: 1.5rem;
+    }
+    .score img{
+        height: 30px;
+    }
+    .medaille{
+        height: 45px;
+    }
+}
+
+@media screen and (width < 1200px) {
+    .score h4{
+        font-size: 1.3rem;
+    }
+    .score img{
+        height: 25px;
+    }
+    .medaille{
+        height: 40px;
+    }
+}
+
+@media screen and (width < 1000px) {
+    #score1{
+        width: 42%;
+    }
+    #score2{
+        width: 38%;
+    }
+    #score3{
+        width: 34%;
+    }
+    #classement h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (width < 850px) {
+    .score h4{
+        font-size: 1.1rem;
+    }
+    .score img{
+        height: 20px;
+    }
+    .medaille{
+        height: 35px;
+    }
+    #classement h2{
+        font-size: 2rem;
+    }
+}
+
+/* Le classement */
+@media screen and (width < 1400px) {
+    .colonne{
+        width: 40%;
+    }
+    .pseudo{
+        font-size: 1.2rem;
+    }
+    .boubou{
+        height: 25px;
+    }
+}
+
+@media screen and (width < 1100px) {
+    .chiffre{
+        font-size: 1.4rem;
+        width: 45px;
+    }
+    .pseudo{
+        font-size: 1rem;
+    }
+    .boubou{
+        height: 20px;
+    }
+    .nombre p{
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (width < 970px) {
+    .chiffre{
+        font-size: 1.2rem;
+        width: 40px;
+        padding-right: 2px !important;
+    }
+    .nom img{
+        width: 25px;
+        margin-right: 17px !important;
+    }
+    .pseudo{
+        font-size: 0.9rem;
+    }
+    .nombre p{
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (width < 860px) {
+    .chiffre{
+        font-size: 1.1rem;
+        width: 37px;
+    }
+    .nom img{
+        width: 20px;
+        margin-right: 19px !important;
+    }
+    .pseudo{
+        font-size: 0.8rem;
+    }
+    .nombre p{
+        font-size: 0.75rem;
+    }
+    .boubou{
+        height: 15px;
+    }
+    .trait{
+        width: 3px;
+    }
+}
+
+@media screen and (width < 760px) {
+    .chiffre{
+        font-size: 1rem;
+        width: 35px;
+    }
+    .pseudo{
+        font-size: 0.75rem;
+    }
+    .nombre p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (width < 577px) {
+    .trait, #colonne2, #podium, #bois{
+        display: none;
+    }
+    #classement{
+        width: 100%;
+    }
+    #colonne1{
+        display: block !important;
+        width: 70%;
+    }
+    .chiffre{
+        font-size: 1.2rem;
+        width: 45px;
+    }
+    .nom img{
+        width: 22px;
+        margin-right: 25px !important;
+    }
+    .pseudo{
+        font-size: 1rem;
+    }
+    .nombre p{
+        font-size: 0.9rem;
+    }
+    .boubou{
+        height: 20px;
+    }
+    #classement h2{
+        width: 80%;
+        text-align: center;
+        margin: auto;
+        margin-top: 7%;
+        margin-bottom: 7%;
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (width < 450px) {
+    #classement h2{
+        font-size: 1.6rem;
+        margin-bottom: 10%;
+    }
+    #colonne1{
+        width: 80%;
+    }
+}
+
+@media screen and (width < 400px) {
+    #classement h2{
+        font-size: 1.5rem;
+        margin-top: 8%;
+    }
+    .pseudo{
+        font-size: 0.9rem;
+    }
+    .nombre p{
+        font-size: 0.85rem;
+    }
+    .chiffre{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (width < 350px) {
+    #classement h2{
+        font-size: 1.4rem;
+        margin-bottom: 12%;
+    }
+    .pseudo{
+        font-size: 0.8rem;
+    }
+    .nombre p{
+        font-size: 0.75rem;
+    }
+    .chiffre{
+        font-size: 1rem;
+    }
+    .nom img{
+        width: 20px;
+        margin-right: 27px !important;
+    }
+    .boubou{
+        height: 17px;
+    }
+}

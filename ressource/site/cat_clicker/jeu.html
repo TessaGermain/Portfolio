@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Clicker</title>
+    <link rel="shortcut icon" href="ressources/elements/cat.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/jeu.css">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/responsive-jeu.css">
+</head>
+<body>
+    <div id="fond-popup-boutique" class="none">
+        <div class="popup">
+            <img class="croix-popup" src="ressources/elements/croix.png" onclick="fermeturePopUpTel('fond-popup-boutique')">
+            <div class="contenu-popup">
+                <div id="bonus-popup">
+                    <img src="">
+                    <h4></h4>
+                </div>
+                <p></p>
+                <span></span>
+                <div id="btn-popup">
+                    <img src="ressources/cadres/Planche.png">
+                    <h3></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fond-popup-succes" class="none">
+        <div class="popup" id="popup-succes">
+            <img class="croix-popup" src="ressources/elements/croix.png" onclick="fermeturePopUpTel('fond-popup-succes')">
+            <div class="contenu-popup" id="contenu-succes">
+                <div class="bonus-popup">
+                    <img src="ressources/elements/trophee.png" class="trophee-popup">
+                    <h4></h4>
+                </div>
+                <p></p>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="flex">
+        <section id="inventaire">
+            <div class="groupe-btn">
+                <div class="btn-gauche actif" id="btn-bonus" onclick="boutonOnglet(event)">
+                    <div class="btn-img" id="btn-bonus-couleur">
+                        <img class="btn-boutique" id="btn-bonus-couleur-img" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-bonus-couleur-h2">Bonus</h2>
+                    </div> 
+                    <div class="btn-img hidden" id="btn-bonus-gris">
+                        <img class="btn-boutique" id="btn-bonus-gris-img" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-bonus-gris-h2">Bonus</h2>
+                    </div>    
+                </div>
+                <div class="btn-gauche" id="btn-skin" onclick="boutonOnglet(event)">
+                    <div class="btn-img hidden" id="btn-skin-couleur">
+                        <img class="btn-boutique" id="btn-skin-couleur-img" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-skin-couleur-h2">Skin</h2>
+                    </div> 
+                    <div class="btn-img" id="btn-skin-gris">
+                        <img class="btn-boutique" id="btn-skin-gris-img" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-skin-gris-h2">Skin</h2>
+                    </div>    
+                </div>
+            </div>
+            <div id="inventaireSkin">
+                <div id="inventaireBonus" class="flexColumn">
+                    <div class="inventaire" id="croquetteInventaire">
+                        <div class="inventaire-gris" id="croquette-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/croquette_gris.png" class="contenu-icone-img croquette">
+                                    <h4 class="texte-gris contenu-icone-descri">Croquettes</h4>
+                                </div>
+                                <h3 class="texte-gris">x0</h3>
+                                <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/clic</h4>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="croquette-inventaire-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/croquette.png" class="contenu-icone-img croquette">
+                                    <h4 class="texte-couleur contenu-icone-descri">Croquettes</h4>
+                                </div>
+                                <h3 class="texte-couleur" id="nbCroquette"></h3>
+                                <h4 class="texte-couleur texte-bas" id="gainCroquette"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="herbeInventaire">
+                        <div class="inventaire-gris" id="herbe-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/HerbeAChat_gris.png" class="contenu-icone-img herbe">
+                                    <h4 class="texte-gris contenu-icone-descri">Herbe à chat</h4>
+                                </div>
+                                <h3 class="texte-gris">x0</h3>
+                                <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/sec</h4>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="herbe-inventaire-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/HerbeAChat.png" class="contenu-icone-img herbe">
+                                    <h4 class="texte-couleur contenu-icone-descri">Herbe à chat</h4>
+                                </div>
+                                <h3 class="texte-couleur" id="nbHerbe"></h3>
+                                <h4 class="texte-couleur texte-bas" id="gainHerbe"></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="siesteInventaire">
+                        <div class="inventaire-gris" id="sieste-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/sieste-gris.png" class="contenu-icone-img sieste">
+                                    <h4 class="texte-gris contenu-icone-descri">Sieste</h4>
+                                </div>
+                                <h3 class="texte-gris">x0</h3>
+                                <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/clic et sec</h4>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="sieste-inventaire-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/sieste.png" class="contenu-icone-img sieste">
+                                    <h4 class="texte-couleur contenu-icone-descri">Sieste</h4>
+                                </div>
+                                <h3 class="texte-couleur" id="nbSieste"></h3>
+                                <h4 class="texte-couleur texte-bas" id="gainSieste"></h4>
+                            </div>
+                        </div>
+                    </div>    
+                </div>    
+                <div id="skin" class="flexColumn hidden">
+                    <div class="inventaire skin" id="skinNormal">
+                        <div class="inventaire-gris" id="skinNormal-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <input type="checkbox" name="" id="checkSkin-normal" onchange="changementSkin(event)">
+                                <label for="checkSkin-normal" class="labelCheckSkin">Normal</label>                                               
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="inventaire skin" id="skinBonus">
+                        <div class="inventaire-gris" id="skinBonus-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <input type="checkbox" name="" id="checkSkin-bonus" onchange="changementSkin(event)">
+                                <label for="checkSkin-bonus" class="labelCheckSkin">Bonus</label>                                               
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="inventaire skin" id="skinNoel">
+                        <div class="inventaire-gris" id="skinNoel-inventaire-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <input type="checkbox" name="" id="checkSkin-noel" onchange="changementSkin(event)">
+                                <label for="checkSkin-noel" class="labelCheckSkin">Noël</label>                                               
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+        </section>
+    
+        <section id="clicker">
+            <div id="centrer">
+                <h2 id="nbCookie"></h2>
+                <p id="descriCookie"></p>
+            </div>
+            <img id="cat-clicker" src="ressources/elements/cat.png" alt="cliquer sur Boubou !" onclick="gainCookieClic()">
+            <a target="_blank" id="class-btn" href="classement.html">
+                <div class="" id="btn-classement">
+                    <img id="classement-img" src="ressources/cadres/Planche.png">
+                    <h2 id="classement-txt">Voir le classement</h2>
+                </div>
+            </a>
+            <div id="pattes" class="hidden">
+                <div class="div-patte hidden" id="patte-1">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-2">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-3">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-4">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-5">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-6">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-7">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-8">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-9">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-10">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-11">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-12">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte hidden" id="patte-13">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+                <div class="div-patte patte-gauche hidden" id="patte-14">
+                    <img src="ressources/elements/pattes.png" alt="" class="patte">
+                </div>
+
+            </div>
+        </section>
+    
+        <section id="boutique">
+            <div class="groupe-btn">
+                <div class="btn-droite actif" id="btn-boutique" onclick="boutonOnglet(event)">
+                    <div class="btn-img" id="btn-boutique-couleur">
+                        <img class="btn-boutique" id="btn-boutique-couleur-img" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-boutique-couleur-h2">Boutique</h2>
+                    </div> 
+                    <div class="btn-img hidden" id="btn-boutique-gris">
+                        <img class="btn-boutique" id="btn-boutique-gris-img" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-boutique-gris-h2">Boutique</h2>
+                    </div>    
+                </div>
+                <div class="btn-droite" id="btn-succes" onclick="boutonOnglet(event)">
+                    <div class="btn-img hidden" id="btn-succes-couleur">
+                        <img class="btn-boutique" id="btn-succes-couleur-img" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-succes-couleur-h2">Succès</h2>
+                    </div> 
+                    <div class="btn-img" id="btn-succes-gris">
+                        <img class="btn-boutique" id="btn-succes-gris-img" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-succes-gris-h2">Succès</h2>
+                    </div>    
+                </div>
+            </div>
+            <div id="boutiqueSucces">
+                <div class="flexColumn" id="bonusBoutique">
+                    <div class="inventaire" id="croquetteBoutique" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="croquette-noir">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/croquette_gris.png" class="contenu-icone-img croquette">
+                                    <h4 class="texte-gris contenu-icone-descri">Croquettes</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-gris" id="prixCroquetteGris"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden bonus-achat-couleur" id="croquette-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/croquette.png" class="contenu-icone-img croquette">
+                                    <h4 class="texte-couleur contenu-icone-descri">Croquettes</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-couleur" id="prixCroquetteCouleur"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-bottom hidden" id="hover-croquetteBoutique">
+                            <p>Ces croquettes permettront à Boubou d'avoir plus d'énergie !</p>
+                            <p class="descriBonus">Ce bonus génère +10<img class="chat chat-titre" src="ressources/elements/cat.png">/clic</p>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="herbeBoutique" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="herbe-noir">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/HerbeAChat_gris.png" class="contenu-icone-img herbe">
+                                    <h4 class="texte-gris contenu-icone-descri">Herbe à chat</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-gris" id="prixHerbeGris"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden bonus-achat-couleur" id="herbe-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/HerbeAChat.png" class="contenu-icone-img herbe">
+                                    <h4 class="texte-couleur contenu-icone-descri">Herbe à chat</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-couleur" id="prixHerbeCouleur"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-bottom hidden" id="hover-herbeBoutique">
+                            <p>Cette herbe à chat donnera à Boubou un regain de motivation !</p>
+                            <p class="descriBonus">Ce bonus génère +10<img class="chat chat-titre" src="ressources/elements/cat.png">/sec</p>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="siesteBoutique" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="sieste-noir">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/sieste-gris.png" class="contenu-icone-img sieste">
+                                    <h4 class="texte-gris contenu-icone-descri">Sieste</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-gris" id="prixSiesteGris"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden bonus-achat-couleur" id="sieste-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <div class="contenu-icone">
+                                    <img src="ressources/elements/sieste.png" class="contenu-icone-img sieste">
+                                    <h4 class="texte-couleur contenu-icone-descri">Sieste</h4>
+                                </div>
+                                <div class="flex">
+                                    <h3 class="texte-couleur" id="prixSiesteCouleur"></h3>
+                                    <img class="chat" src="ressources/elements/cat.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-top hidden" id="hover-siesteBoutique">
+                            <p>Après une bonne sieste Boubou est plus reposé que jamais !</p>
+                            <p class="descriBonus">Ce bonus génère +1000<img class="chat chat-titre" src="ressources/elements/cat.png">/clic et sec</p>
+                        </div>
+                    </div>    
+                </div>
+                <div class="flexColumn hidden" id="succes">
+                    <div class="inventaire" id="fan" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="fan-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                    <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee">
+                                    <h3 class="texte-gris contenu-icone-descri trophee">Fan de chats</h3>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="fan-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee">
+                                <h3 class="texte-couleur contenu-icone-descri trophee">Fan de chats</h3>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-bottom hidden" id="hover-fan">
+                            <p>Vous êtes fan de chats ? Aidez Boubou à atteindre 10 <img class="chat chat-titre" src="ressources/elements/cat.png"></p>
+                            <p class="descriBonus">Ce succès se débloque au bout de 10 <img class="chat chat-titre" src="ressources/elements/cat.png"></p>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="adoption" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="adoption-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                    <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee">
+                                    <h3 class="texte-gris contenu-icone-descri trophee">Adoption des chats</h3>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="adoption-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee">
+                                <h3 class="texte-couleur contenu-icone-descri trophee">Adoption des chats</h3>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-bottom hidden" id="hover-adoption">
+                            <p>Vous voulez adopter Boubou ? Aidez le à atteindre 1 000 <img class="chat chat-titre" src="ressources/elements/cat.png"></p>
+                            <p class="descriBonus">Ce succès se débloque au bout de 1 000 <img class="chat chat-titre" src="ressources/elements/cat.png"></p>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="vieille" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="vieille-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                    <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee">
+                                    <h3 class="texte-gris contenu-icone-descri trophee">Vieille aux chats</h3>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="vieille-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee">
+                                <h3 class="texte-couleur contenu-icone-descri trophee">Vieille aux chats</h3>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-bottom hidden" id="hover-vieille">
+                            <p>Vous êtes devenu une véritable vieille aux chats !</p>
+                            <p class="descriBonus">Ce succès se débloque au bout de 100 000 <img class="chat chat-titre" src="ressources/elements/cat.png"></p>
+                        </div>
+                    </div>
+                    <div class="inventaire" id="chatMarche" onmouseenter="popUpDescriOpen(event)" onmouseleave="popUpDescriClose(event)">
+                        <div class="inventaire-gris" id="chatMarche-gris">
+                            <img class="img-inventaire-gris" src="ressources/cadres/bois3_gris.png">
+                            <div class="contenu">
+                                    <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee">
+                                    <h3 class="texte-gris contenu-icone-descri trophee">Chat marche</h3>
+                            </div>
+                        </div>
+                        <div class="inventaire-couleur hidden" id="chatMarche-couleur">
+                            <img class="img-inventaire-couleur" src="ressources/cadres/bois3_Rempli.png">
+                            <div class="contenu">
+                                <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee">
+                                <h3 class="texte-couleur contenu-icone-descri trophee">Chat marche</h3>
+                            </div>
+                        </div>
+                        <div class="hover-description hover-top hidden" id="hover-chatMarche">
+                            <p>Aidez Boubou à s'améliorer en achetant un bonus</p>
+                            <p class="descriBonus">Ce succès se débloque lorsque vous achetez votre premier bonus</p>
+                        </div>
+                    </div>
+
+                </div>    
+            </div>
+        </section>
+
+        <section id="menu-mobile">
+            <div class="groupe-btn" id="groupe-btn-tel">
+                <div class="btn-tel actif" id="btn-bonus-tel" onclick="boutonOngletTel(event)">
+                    <div class="btn-img" id="btn-bonus-couleur-tel">
+                        <img class="btn-boutique" id="btn-bonus-couleur-img-tel" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-bonus-couleur-h2-tel">Bonus</h2>
+                    </div> 
+                    <div class="btn-img hidden" id="btn-bonus-gris-tel">
+                        <img class="btn-boutique" id="btn-bonus-gris-img-tel" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-bonus-gris-h2-tel">Bonus</h2>
+                    </div>    
+                </div>
+
+                <div class="btn-tel" id="btn-boutique-tel" onclick="boutonOngletTel(event)">
+                    <div class="btn-img hidden" id="btn-boutique-couleur-tel">
+                        <img class="btn-boutique" id="btn-boutique-couleur-img-tel" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-boutique-couleur-h2-tel">Boutique</h2>
+                    </div> 
+                    <div class="btn-img" id="btn-boutique-gris-tel">
+                        <img class="btn-boutique" id="btn-boutique-gris-img-tel" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-boutique-gris-h2-tel">Boutique</h2>
+                    </div>    
+                </div>
+
+                <div class="btn-tel" id="btn-succes-tel" onclick="boutonOngletTel(event)">
+                    <div class="btn-img hidden" id="btn-succes-couleur-tel">
+                        <img class="btn-boutique" id="btn-succes-couleur-img-tel" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-succes-couleur-h2-tel">Succès</h2>
+                    </div> 
+                    <div class="btn-img" id="btn-succes-gris-tel">
+                        <img class="btn-boutique" id="btn-succes-gris-img-tel" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-succes-gris-h2-tel">Succès</h2>
+                    </div>    
+                </div>
+
+                <div class="btn-tel" id="btn-skin-tel" onclick="boutonOngletTel(event)">
+                    <div class="btn-img hidden" id="btn-skin-couleur-tel">
+                        <img class="btn-boutique" id="btn-skin-couleur-img-tel" src="ressources/cadres/Planche.png">
+                        <h2 class="boutique-texte texte-couleur" id="btn-skin-couleur-h2-tel">Skin</h2>
+                    </div> 
+                    <div class="btn-img" id="btn-skin-gris-tel">
+                        <img class="btn-boutique" id="btn-skin-gris-img-tel" src="ressources/cadres/planche_gris.png">
+                        <h2 class="boutique-texte texte-gris" id="btn-skin-gris-h2-tel">Skin</h2>
+                    </div>    
+                </div>
+            </div>
+            
+            <div id="bonus-tel">
+                <div class="inventaire" id="croquetteInventaire-tel">
+                    <div class="inventaire-gris" id="croquette-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/croquette_gris.png" class="contenu-icone-img croquette">
+                                <h4 class="texte-gris contenu-icone-descri">Croquettes</h4>
+                            </div>
+                            <h3 class="texte-gris">x0</h3>
+                            <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/clic</h4>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="croquette-inventaire-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/croquette.png" class="contenu-icone-img croquette">
+                                <h4 class="texte-couleur contenu-icone-descri">Croquettes</h4>
+                            </div>
+                            <h3 class="texte-couleur" id="nbCroquette-tel"></h3>
+                            <h4 class="texte-couleur texte-bas" id="gainCroquette-tel"></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="herbeInventaire-tel">
+                    <div class="inventaire-gris" id="herbe-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/HerbeAChat_gris.png" class="contenu-icone-img herbe">
+                                <h4 class="texte-gris contenu-icone-descri">Herbe à chat</h4>
+                            </div>
+                            <h3 class="texte-gris">x0</h3>
+                            <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/sec</h4>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="herbe-inventaire-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/HerbeAChat.png" class="contenu-icone-img herbe">
+                                <h4 class="texte-couleur contenu-icone-descri">Herbe à chat</h4>
+                            </div>
+                            <h3 class="texte-couleur" id="nbHerbe-tel"></h3>
+                            <h4 class="texte-couleur texte-bas" id="gainHerbe-tel"></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="siesteInventaire-tel">
+                    <div class="inventaire-gris" id="sieste-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/sieste-gris.png" class="contenu-icone-img sieste">
+                                <h4 class="texte-gris contenu-icone-descri">Sieste</h4>
+                            </div>
+                            <h3 class="texte-gris">x0</h3>
+                            <h4 class="texte-gris texte-bas">+0<img src="ressources/elements/cat.png" class="chat chat-titre">/clic et sec</h4>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="sieste-inventaire-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/sieste.png" class="contenu-icone-img sieste">
+                                <h4 class="texte-couleur contenu-icone-descri">Sieste</h4>
+                            </div>
+                            <h3 class="texte-couleur" id="nbSieste-tel"></h3>
+                            <h4 class="texte-couleur texte-bas" id="gainSieste-tel"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="boutique-tel" class="none">
+                <div class="inventaire" id="croquetteBoutique-tel">
+                    <div class="inventaire-gris" id="croquette-noir-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/croquette_gris.png" class="contenu-icone-img croquette">
+                                <h4 class="texte-gris contenu-icone-descri">Croquettes</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-gris" id="prixCroquetteGris-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden bonus-achat-couleur" id="croquette-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/croquette.png" class="contenu-icone-img croquette">
+                                <h4 class="texte-couleur contenu-icone-descri">Croquettes</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-couleur" id="prixCroquetteCouleur-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="herbeBoutique-tel">
+                    <div class="inventaire-gris" id="herbe-noir-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/HerbeAChat_gris.png" class="contenu-icone-img herbe">
+                                <h4 class="texte-gris contenu-icone-descri">Herbe à chat</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-gris" id="prixHerbeGris-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden bonus-achat-couleur" id="herbe-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/HerbeAChat.png" class="contenu-icone-img herbe">
+                                <h4 class="texte-couleur contenu-icone-descri">Herbe à chat</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-couleur" id="prixHerbeCouleur-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="siesteBoutique-tel">
+                    <div class="inventaire-gris" id="sieste-noir-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/sieste-gris.png" class="contenu-icone-img sieste">
+                                <h4 class="texte-gris contenu-icone-descri">Sieste</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-gris" id="prixSiesteGris-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden bonus-achat-couleur" id="sieste-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png">
+                        <div class="contenu">
+                            <div class="contenu-icone">
+                                <img src="ressources/elements/sieste.png" class="contenu-icone-img sieste">
+                                <h4 class="texte-couleur contenu-icone-descri">Sieste</h4>
+                            </div>
+                            <div class="flex">
+                                <h3 class="texte-couleur" id="prixSiesteCouleur-tel"></h3>
+                                <img class="chat" src="ressources/elements/cat.png">
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <div id="succes-tel" class="none">
+                <div class="inventaire" id="fan-tel" onclick="popUpSuccesTel(event)">
+                    <div class="inventaire-gris" id="fan-gris-tel">
+                        <img class="img-inventaire-gris" id="fan-gris-img-tel" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu" id="fan-contenu-gris-tel">
+                                <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee" id="fan-trophee-gris-img-tel">
+                                <h3 class="texte-gris contenu-icone-descri trophee" id="fan-h3-gris-tel">Fan de chats</h3>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="fan-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png" id="fan-couleur-img-tel">
+                        <div class="contenu" id="fan-contenu-couleur-tel">
+                            <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee" id="fan-trophee-couleur-tel">
+                            <h3 class="texte-couleur contenu-icone-descri trophee" id="fan-h3-couleur-tel">Fan de chats</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="adoption-tel" onclick="popUpSuccesTel(event)">
+                    <div class="inventaire-gris" id="adoption-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png" id="adoption-img-gris-tel">
+                        <div class="contenu" id="adoption-contenu-gris-tel">
+                                <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee" id="adoption-trophee-gris-tel">
+                                <h3 class="texte-gris contenu-icone-descri trophee" id="adoption-h3-gris-tel">Adoption des chats</h3>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="adoption-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png" id="adoption-img-gris-tel">
+                        <div class="contenu" id="adoption-contenu-gris-tel">
+                            <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee" id="adoption-trophee-gris-tel">
+                            <h3 class="texte-couleur contenu-icone-descri trophee" id="adoption-h3-gris-tel">Adoption des chats</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="vieille-tel" onclick="popUpSuccesTel(event)">
+                    <div class="inventaire-gris" id="vieille-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png" id="vieille-img-gris-tel">
+                        <div class="contenu" id="vieille-gris-contenu-tel">
+                                <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee" id="vieille-trophee-gris-tel">
+                                <h3 class="texte-gris contenu-icone-descri trophee" id="vieille-h3-gris-tel">Vieille aux chats</h3>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="vieille-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png" id="vieille-img-couleur-tel">
+                        <div class="contenu" id="vieille-couleur-contenu-tel">
+                            <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee" id="vieille-trophee-couleur-tel">
+                            <h3 class="texte-couleur contenu-icone-descri trophee" id="vieille-h3-couleur-tel">Vieille aux chats</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inventaire" id="chatMarche-tel" onclick="popUpSuccesTel(event)">
+                    <div class="inventaire-gris" id="chatMarche-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png" id="chatMarche-img-gris-tel">
+                        <div class="contenu" id="chatMarche-gris-contenu-tel">
+                                <img src="ressources/elements/trophee_gris.png" class="contenu-icone-img trophee" id="chatMarche-trophee-gris-tel">
+                                <h3 class="texte-gris contenu-icone-descri trophee" id="chatMarche-h3-gris-tel">Chat marche</h3>
+                        </div>
+                    </div>
+                    <div class="inventaire-couleur hidden" id="chatMarche-couleur-tel">
+                        <img class="img-inventaire-couleur" src="ressources/cadres/CadreMobile2.png" id="chatMarche-img-couleur-tel">
+                        <div class="contenu" id="chatMarche-couleur-contenu-tel">
+                            <img src="ressources/elements/trophee.png" class="contenu-icone-img trophee"  id="chatMarche-couleur-trophee-tel">
+                            <h3 class="texte-couleur contenu-icone-descri trophee" id="chatMarche-couleur-h3-tel">Chat marche</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skin-tel" class="none">
+                <div class="inventaire skin-tel" id="skinNormal-tel">
+                    <div class="inventaire-gris" id="skinNormal-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <input type="checkbox" name="" id="checkSkin-normal-tel" onchange="changementSkinTel(event)">
+                            <label for="checkSkin-normal" class="labelCheckSkin">Normal</label>                                               
+                        </div>
+                    </div>
+                </div>    
+                <div class="inventaire skin-tel" id="skinBonus-tel">
+                    <div class="inventaire-gris" id="skinBonus-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <input type="checkbox" name="" id="checkSkin-bonus-tel" onchange="changementSkinTel(event)">
+                            <label for="checkSkin-bonus" class="labelCheckSkin">Bonus</label>                                               
+                        </div>
+                    </div>
+                </div>    
+                <div class="inventaire skin-tel" id="skinNoel-tel">
+                    <div class="inventaire-gris" id="skinNoel-inventaire-gris-tel">
+                        <img class="img-inventaire-gris" src="ressources/cadres/CadreMobile2_gris.png">
+                        <div class="contenu">
+                            <input type="checkbox" name="" id="checkSkin-noel-tel" onchange="changementSkinTel(event)">
+                            <label for="checkSkin-noel" class="labelCheckSkin">Noël</label>                                               
+                        </div>
+                    </div>
+                </div>  
+            </div>    
+        </section>
+    </div>
+    <script src="script/jeu.js"></script>
+</body>
+</html>
