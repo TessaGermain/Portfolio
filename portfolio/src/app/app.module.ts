@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { SeparatorComponent } from './components/separator/separator.component';
 import { AboutMeComponent } from './pages/home/components/about-me/about-me.component';
+import { ButtonComponent } from './components/button/button.component';
+import { CompetenceComponent } from './pages/home/components/competence/competence.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { AboutMeComponent } from './pages/home/components/about-me/about-me.comp
     HomeComponent,
     MenuComponent,
     SeparatorComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    ButtonComponent,
+    CompetenceComponent
   ],
   imports: [
     BrowserModule,

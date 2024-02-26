@@ -3,6 +3,7 @@
 
 .content {
     @include flex($justify: space-around, $gap: 1.5rem);
+    margin-top: 5rem;
 
     .image {
         @include flex();
@@ -13,15 +14,16 @@
         .cloud {
             position: absolute;
             width: 35%;
-
+            
             &.code {
-                top: 0;
+                top: -80px;
                 left: 0;
             }
 
             &.graph {
-                top: 0;
+                top: -50px;
                 right: 0;
+                transform: rotate(-5deg);
             }
 
             img {
@@ -29,16 +31,33 @@
                 &.no-hover {
                     @include absoluteTL(0,0);
                 }
+                &.hover {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                img {
+                    cursor: pointer;
+                    &.no-hover {
+                        display: none;
+                    }
+                    &.hover {
+                        display: block;
+                    }
+                }
             }
         }
 
         .chibi {
             width: 35%;
-            transform: translateY(50px);
         }
     }
 
     .text {
-        width: 70%;
+        width: 50%;
+        font-family: "biko";
+        color: $white;
+        font-size: 1.25rem;
     }
 }
