@@ -1,3 +1,11 @@
-<div class="bouton">
-    {{ buttonOptions?.text }}
+<div class="button" (click)="buttonOptions?.handler" *ngIf="buttonOptions?.handler">
+    <p [ngStyle]="this.buttonStyle">{{ buttonOptions?.text }}</p>
+    <div class="background dark-gray"></div>
+    <div class="background purple"></div>
 </div>
+
+<a [href]="buttonOptions?.link" [routerLink]="buttonOptions?.routerLink" class="button" *ngIf="buttonOptions?.link || buttonOptions?.routerLink">
+    <p [ngStyle]="this.buttonStyle">{{ buttonOptions?.text }}</p>
+    <div class="background dark-gray"></div>
+    <div class="background purple"></div>
+</a>

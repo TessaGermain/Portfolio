@@ -2,10 +2,10 @@
 @import "../../../../../assets/styles/variables.scss";
 
 .content {
-    @include flex($justify: space-around, $gap: 1.5rem);
-    margin-top: 5rem;
+    @include flex($justify: space-evenly, $gap: 1.5rem);
 
     .image {
+        margin-top: 5rem;
         @include flex();
         position: relative;
         width: 30%;
@@ -23,7 +23,6 @@
             &.graph {
                 top: -50px;
                 right: 0;
-                transform: rotate(-5deg);
             }
 
             img {
@@ -55,9 +54,10 @@
     }
 
     .text {
-        width: 50%;
+        width: 45%;
         font-family: "biko";
         color: $white;
         font-size: 1.25rem;
+        text-align: justify;
     }
 }

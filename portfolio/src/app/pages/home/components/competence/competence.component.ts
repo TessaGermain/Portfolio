@@ -9,7 +9,8 @@ import { Button } from 'src/app/models/button.model';
 export class CompetenceComponent {
   cvButton: Button = {
     text: "Voir mon CV",
-    link: ""
+    link: "assets/ressources/pdf/GERMAIN_Tessa_CV.pdf",
+    size: 1.2
   }
 
 }

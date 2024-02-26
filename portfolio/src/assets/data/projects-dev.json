@@ -1,0 +1,77 @@
+{
+    "catClicker": {
+        "name": "Clicker game",
+        "date": "2022-12-01",
+        "time": "30h",
+        "type": "Projet scolaire en groupe de 3",
+        "image": "catClicker.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "shortDescription": "Clicker game responsive sur le thème des chats",
+        "tasks": [
+            "Intégration de la page de jeu",
+            "Fonctionnement du jeu en JavaScript",
+            "Enregistrement des données grâce au sessionStorage",
+            "Utilisation de requêtes AJAX pour sauvegarder et enregistrer les scores dans une BDD grâce à une API"
+        ],
+        "detailedDescription": [
+            "Le but de ce clicker game est d'amasser le plus de points (chats) possible",
+            "Le jeu contient 3 types de bonus différents: un gain de 10 chats au clic, un gain de 10 chats par seconde, et un gain de 1 000 au clic et par seconde. Le joueur peut en acheter autant qu'il veut du moment que son solde de points est suffisant (les bonus achetables sont en couleur tandis que les autres sont en noir et blanc).",
+            "Tout au long du jeu, le joueur peut changer le skin de son jeu et débloquer des succès",
+            "Toutes les minutes, le score du joueur est enregistré grâce à une API et il peut le consulter à tout moment dans la page de classement. Toutes les données du joueur sont également sauvegardé en local pour que même s'il réactualise son onglet les bonus achetés soient conservés."
+        ],
+        "info": "L'API servant à ce projet n'est plus en ligne, ainsi certaines fonctionnalités du site peuvent être disfonctionnelles"
+    },
+    "JPMeaux": {
+        "name": "JPMeaux",
+        "date": "2024-11-01",
+        "time": "50h",
+        "type": "Projet scolaire en groupe de 6",
+        "image": "none",
+        "languages": [
+            "Angular",
+            "API",
+            "PHP",
+            "SQL"
+        ],
+        "shortDescription": "Site pour promouvoir et gérer la journée porte ouverte de la filière MMI de l'IUT de Meaux.",
+        "tasks": [
+            "Développement de la moitié des fonctionnalités de l'API",
+            "Intégration et fonctionnement de la page 'Parcours'",
+            "Fonctionnement de la page 'Vos retours'"
+        ],
+        "detailedDescription": [
+            "Le site est décomposé en deux parties : une partie dédiée aux visiteurs de la JPO et une autre aux administrateurs"
+        ]
+    },
+    "otkCours": {
+        "name": "OTK Cours",
+        "date": "2022-09-01",
+        "time": "30h",
+        "type": "Projet personnel",
+        "image": "calendar.jpg",
+        "languages": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "SQL"
+        ],
+        "shortDescription": "Gestion d'un historique de cours particulier et génération de PDF de facture envoyés par mail",
+        "tasks": [
+            "Identité graphique et maquettes du site",
+            "Intégration du site",
+            "Système de connexion",
+            "Création et gestion d'une base de données",
+            "Ajout de cours dans la base de données",
+            "Génération de PDF et envoi par mail"
+        ],
+        "detailedDescription": [
+            "J'ai développé ce site suite à une demande de mon père qui est professeur particulier. Il voulait un moyen simple d'avoir une trace de ses cours avec leur date et leur tarif afin d'envoyer un devis par mois pour ses parents d'élèves",
+            "Le design du site est plutôt simple et ne se compose que d'une page d'accueil ainsi qu'une page par élève. Sur la page résumé pour un élève, un pop-up est accessible afin d'ajouter un cours. Un PDF résumant les cours et le prix du mois courant peut être généré. Cette fonctionnalité a été créé grâce à la library DomPDF."
+        ]
+    }
+}
