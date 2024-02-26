@@ -1,0 +1,21 @@
+@mixin flex(
+    $justify: center,
+    $align: center,
+    $direction: row,
+    $gap: 0px
+) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    gap: $gap;
+}
+
+@mixin absoluteTL(
+    $top,
+    $left
+) {
+    position: absolute;
+    top: $top;
+    left: $left;
+}

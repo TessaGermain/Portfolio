@@ -1,0 +1,8 @@
+<div class="content">
+    <h1>{{this.title}}</h1>
+    <div class="menu" (click)="toggleMenu()" [ngClass]="{'opened': this.isMenuOpen}">
+        <img src="../../../assets/image/avion-papier.png" alt="menu" [ngClass]="{'opened': this.isMenuOpen}">
+        <h3 [ngClass]="{'opened': this.isMenuOpen}">Menu</h3>
+    </div>
+    <app-menu [menuItems]="menuItems" [ngClass]="{'opened': this.isMenuOpen}"></app-menu>
+</div>

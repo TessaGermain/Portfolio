@@ -1,0 +1,32 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+.content {
+    width: 100%;
+    position: relative;
+    @include flex();
+    margin: 3vh 0;
+
+    .line {
+        @include absoluteTL(50% , 0);
+        border-top: dashed $purple;
+        border-width: 5px;
+        z-index: 0;
+        width: 100%;
+    }
+    h2 {
+        padding: 1rem;
+        background-color: $dark-background;
+        z-index: 1;
+    }
+    img {
+        height: 45px;
+        z-index: 1;
+        &.left {
+            @include absoluteTL(25% , 100%);
+        }
+        &.right {
+            @include absoluteTL(25% , 0);
+            transform: rotate(180deg);
+        }
+    }
+}

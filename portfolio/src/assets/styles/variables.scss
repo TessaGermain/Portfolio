@@ -1,0 +1,40 @@
+//COLORS
+$black: black;
+$transparent-black: rgba(0, 0, 0, 0.8);
+$dark-background: #171717;
+$purple: #820347;
+$white: white;
+
+//FONTS
+@font-face {
+    font-family: "typewriter";
+    src: url("../../assets/font/ATypewriterForMe.ttf");
+}
+@font-face {
+    font-family: "bikoBold";
+    src: url("../../assets/font/Biko_Bold.otf");
+}
+@font-face {
+    font-family: "biko";
+    src: url("../../assets/font/Biko_Regular.otf");
+}
+
+//HEADINGS
+h1 {
+    margin: 0;
+    font-family: "typewriter";
+    font-weight: bold;
+}
+h2 {
+    margin: 0;
+    font-family: "typewriter";
+    font-weight: bold;
+    font-size: 2.25rem;
+    color: $white;
+}
+h3 {
+    margin: 0;
+    color: $white;
+    font-size: 1rem;
+    font-family: "typewriter";
+}

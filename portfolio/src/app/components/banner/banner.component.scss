@@ -1,0 +1,62 @@
+@import "../../../assets/styles/variables.scss";
+@import "../../../assets/styles/mixins.scss";
+.content {
+    @include flex();
+    position: relative;
+    background-image: url("../../../assets/image/banniere.png");
+    background-size: contain;
+    height: 40vh;
+    width: 100%;
+
+    h1{
+        font-size: 5rem;
+        color: $white;
+        font-family: "typewriter";
+        text-shadow: 5px 5px 0px $black;
+    }
+
+    .menu {
+        @include absoluteTL(0.5rem , 0.5rem);
+        @include flex($gap: 0.25rem, $align: start);
+        transition: 1s;
+
+        img {
+            height: 50px;
+            transform: rotate(90deg);
+            z-index: 5;
+            transition: 1s;
+            &.opened {
+                transform: rotate(0deg);
+            }
+        }
+
+        h3 {
+            transition: 0.2s;
+            &.opened {
+                opacity: 0;
+            }
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &.opened {
+            top: 100%;
+            left: 30%;
+            transform: translateY(-50%);
+        }
+    }
+
+    app-menu {
+        @include absoluteTL(0,0);
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+        &.opened {
+            width: 30%;
+            height: 100%;
+        }
+    }
+}

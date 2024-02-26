@@ -1,0 +1,44 @@
+@import "../../../../../assets/styles/mixins.scss";
+@import "../../../../../assets/styles/variables.scss";
+
+.content {
+    @include flex($justify: space-around, $gap: 1.5rem);
+
+    .image {
+        @include flex();
+        position: relative;
+        width: 30%;
+        transform: translateX(5%);
+
+        .cloud {
+            position: absolute;
+            width: 35%;
+
+            &.code {
+                top: 0;
+                left: 0;
+            }
+
+            &.graph {
+                top: 0;
+                right: 0;
+            }
+
+            img {
+                width: 100%;
+                &.no-hover {
+                    @include absoluteTL(0,0);
+                }
+            }
+        }
+
+        .chibi {
+            width: 35%;
+            transform: translateY(50px);
+        }
+    }
+
+    .text {
+        width: 70%;
+    }
+}
