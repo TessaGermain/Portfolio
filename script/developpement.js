@@ -47,6 +47,15 @@ calendar = new projet(
     Une fonctionnalité d'envoi de mail automatique contenant le PDF du résumé du mois a été réfléchi mais n'a pas encore été ajouté au site.`,
     ["Identité graphique et maquettes du site", "Développement front", "Système de connexion", "Création et gestion d'une base de données", "Ajout de cours", "Génération de PDF"],
     null, "VIDEO A MODIFIER", "calendar.jpg");
+calligraphieJaponaise = new projet(
+    "calligraphieJaponaise", "La calligraphie japonaise", "Mars 2023", "environ 20h", "Projet scolaire en binôme", ["HTML", "SCSS", "JavaScript"],
+    "Site informatif sur la calligraphie japonaise avec des éléments interactif en 3D",
+    `Ce site venait en binôme avec un travail de recherche et un exposé sur un sujet au choix.<br>
+    Le but de ce site était de créer un site informatif et interactif. Pour cela, nous avons choisi de combiner texte et modèle 3D interactif.<br>
+    La page d'accueil du site affiche un texte expliquant l'histoire de la calligraphie japonaise avec une boîte de calligraphie et l'utilisateur peut naviguer entre les différents éléments de la boîte en cliquant sur des boutons. Il peut également regarder les objets sous différents angles grâce à une navigation au clavier.<br>
+    Les éléments en 3D ont été modélisé avec Blender puis intégré au site grâce à la library THREE.js`,
+    ["Intégration du site", "Intégration des éléments 3D et de leur interactivité dans le site", "Traduction du site en anglais"],
+    "", null, "calligraphie.png");  
 catClicker = new projet(
     "catClicker", "Clicker Game", "Décembre 2022", "environ 30h", "Projet scolaire en groupe", ["HTML","CSS","JavaScript"],
     "Clicker game responsive sur le thème des chats.",
@@ -77,7 +86,15 @@ floral = new projet(
     "Site d'une boutique de fleur fictive",
     `Site sur un thème libre afin de se familiariser avec Bootstrap. Le but de ce projet était d'utiliser le plus d'élément de Bootstrap tout en gardant une cohérence et en les rendant accessible.`,
     ["Identité graphique du site", "Développement front de la page boutique", "Création de class et objet JavaScript", "Accessibilité du site"],
-    "ressource/site/floral/boutique.html", null, "floral.jpg");      
+    "ressource/site/floral/boutique.html", null, "floral.jpg");
+JPMeaux = new projet(
+    "JPMeaux", "JPMeaux", "Novembre - Décembre 2023", "environ 45h", "Projet scolaire en groupe", ["Angular", "API", "PHP", "SQL"],
+    "Site pour promouvoir et gérer la journée porte ouverte de la filière MMI de l'IUT de Meaux",
+    `Ce site est séparé en deux parties : une section pour les visiteurs de la JPO et une section pour les admistrateurs/organisateurs.
+    Les visiteurs ont accès à des informations sur la JPO, une présentation de la formation, une visite 3D interactive d'une des salles de l'IUT, une prévision du parcours souhaité et un formulaire de retours.
+    Les administrateurs ont accès quant à eux à un gestionnaire des projets pouvant être visionnés sur le site, des statistiques sur les retours des visiteurs, et leurs informations de contact.`,
+    ["Réalisation de la moitié des fonctionnalités de l'API", "Intégration et fonctionnement de la page 'Parcours'", "Fonctionnement de la page 'Vos retours'", "Mise en place des tris et filtres sur les tableaux de la page 'Administrateur'"],
+    "http://sae501-salle317.alwaysdata.net", null, "JPMeaux.png");      
 kawaiiIsland = new projet(
     "kawaiiIsland", "Site de gestion de ressources", "Août 2022", "environ 10h", "Projet personnel en binôme", ["HTML", "CSS", "PHP", "SQL"],
     "Site créé pour aider à gérer les ressources du jeu Kawaii Island.",
@@ -98,14 +115,35 @@ mfp = new projet(
     L'utilisateur peut indiquer lorsqu'il a récolté des plantes et combien de kg. Une fonctionnalité existe pour calculer le nombre total de kg récolté pour un certain type de plante. L'utilisateur a également accès à un récapitulatif des récoltes qui indique pour chaque type de plante les dates et les quantités en kg de récolte.`,
     ["Illustration du site", "Carte des jardins en display grid","Création de la base de données", "Ajout/modification/suppression des plants sur une case précise de la carte","Fonctionnalité pour ne pouvoir ajouter que les plantes dont c'est la période de semis", "Fonctionnalité de calcul de la quantité des récoltes pour un type de plante"],
     null, "VIDEO A MODIFIER", "mfp.jpg");
+owlTree = new projet(
+    "owlTree", "Owl Tree", "Février - Avril 2023", "environ 45h", "Projet scolaire en groupe de 5", ["HTML", "SCSS", "JavaScript", "API", "PHP", "SQL"],
+    "Site de type Twitter",
+    `OwlTree est un site de type Twitter où les utilisateurs peuvent s'inscrire et envoyer des messages. Le site propose différentes fonctionnalités:
+    <ul>
+        <li>Inscription/Connexion/Déconnexion</li>
+        <li>Créer, liker, commenter, retweeter et enregistrer un message</li>
+        <li>Rechercher un utilisateur et accéder à leur profil</li>
+        <li>Follow/Unfollow d'un utilisateur</li>
+        <li>Modification du profil (photo de profil, pseudo, bannière, biographie)</li>
+        <li>Modification du thème du site</li>
+    </ul>
+    Afin de réaliser ce site, nous avons créer une API en PHP et nous l'avons relié au front du site grâce à des requêtes AJAX.`,
+    ["Réalisation de la moitié des fonctionnalités de l'API", "Implémentation du système de recherche, like, retweet et enregistrement des tweets", "Intégration de la page 'Connexion/Inscription'"],
+    null, null, null);
 reservationMateriel = new projet(
     "reservationMateriel", "Réservation de matériel VR", "Mai - Juin 2022", "environ 25h", "Projet scolaire en binôme", ["HTML", "CSS", "PHP", "SQL", "JavaScript"],
     "Site de réservation de matériel pour une université fictive",
     `Ce site devait permettre de gérer la réservation de matériel pour une université. Les réservations devaient être approuvés par les professeurs avant d'être validé.`,
     ["Identité graphique du site", "Maquettes du header, page de visualisation du matériel, page de réservation", "Page de visualisation du matériel et de réservation", "Animation de la barre de recherche", "Système de connexion/inscription", "Vérification du format d'adresse mail", "Ajout/modification/suppression de matériel", "Vérification de la possibilité de la réservation", "Système de validation des réservations par les professeurs"],
     "https://sae203-germain-mehault.000webhostapp.com/", "VIDEO A MODIFIER", "reservationMateriel.jpg");
+webdoc = new projet(
+    "webdoc", "Webdocumentaire sur un restaurant", "Octobre - Novembre 2022", "environ 20h", "Projet scolaire en groupe de 4", ["HTML", "CSS", "JavaScript"],
+    "Webdocumentaire immersif sur le restaurant 'La ferme de Charles'",
+    ``,
+    ["Prise de vidéos", "Rédaction d'un article", "Intégration des articles et de la galerie photo", "Intégration des transitions vidéos"],
+    "https://webdocumentaire-la-ferme-de-charles.000webhostapp.com", null, "webdoc.png");
 
-totalProjet = [catClicker,floral,dragAndDrop,calendar,kawaiiIsland,levelUpTechConsulting,cuisineMaman,reservationMateriel,bubbleWave, mfp];
+totalProjet = [JPMeaux, calligraphieJaponaise, owlTree, catClicker, floral, dragAndDrop, webdoc, calendar,kawaiiIsland,levelUpTechConsulting,cuisineMaman,reservationMateriel,bubbleWave, mfp];
 affichageProjet(totalProjet);
 function affichageProjet(totalProjet){
     document.getElementById('projet').innerHTML = "";
@@ -119,6 +157,7 @@ function affichageProjet(totalProjet){
         }
     }
     if(filtreNul == 0){
+        console.log(totalProjet);
         afficher(totalProjet);
     }
     else{
@@ -137,6 +176,7 @@ function affichageProjet(totalProjet){
     console.log(filtreActif);
 }
 function afficher(tableau){
+    console.log(tableau)
     let i = 0;
     for(let tab of tableau){
         if(i%2 == 0){
