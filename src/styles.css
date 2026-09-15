@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'ATypewriterForMe';
+  src: url('/font/ATypewriterForMe.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Biko';
+  src: url('/font/Biko_Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Biko';
+  src: url('/font/Biko_Bold.otf') format('opentype');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-night font-body text-paper antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-body;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lightBlue;
+  }
+}
