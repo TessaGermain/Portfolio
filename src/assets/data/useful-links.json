@@ -1,0 +1,30 @@
+[
+  {
+    "id": "github",
+    "label": "GitHub",
+    "description": "Retrouver mes projets et mon code.",
+    "url": null,
+    "order": 1
+  },
+  {
+    "id": "linkedin",
+    "label": "LinkedIn",
+    "description": "Me suivre et échanger côté professionnel.",
+    "url": null,
+    "order": 2
+  },
+  {
+    "id": "gmail",
+    "label": "Gmail",
+    "description": "Me contacter directement par mail.",
+    "url": "mailto:tessa.germain2003@gmail.com",
+    "order": 3
+  },
+  {
+    "id": "cv",
+    "label": "CV",
+    "description": "Télécharger mon CV au format PDF.",
+    "url": "ressource/pdf/GERMAIN_Tessa_CV.pdf",
+    "order": 4
+  }
+]

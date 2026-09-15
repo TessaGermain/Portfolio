@@ -1,0 +1,32 @@
+[
+  {
+    "id": "bac-general",
+    "title": "Bac général",
+    "period": "2018 - 2021",
+    "startDate": "2018-09-01",
+    "endDate": "2021-06-30",
+    "summary": "Baccalauréat général obtenu avec mention très bien.",
+    "description": "Cette période marque les bases de mon parcours : c'est au lycée que mon intérêt pour la programmation s'est installé et que j'ai commencé à explorer la création de projets numériques.",
+    "details": ["Spécialités scientifiques", "Mention très bien", "Premiers projets personnels autour du web"]
+  },
+  {
+    "id": "but-mmi",
+    "title": "BUT MMI",
+    "period": "2021 - Actuellement",
+    "startDate": "2021-09-01",
+    "summary": "Formation en Métiers du Multimédia et de l'Internet.",
+    "description": "Le BUT MMI m'a permis de consolider mes bases web et de travailler sur des projets complets, de la conception à l'intégration, avec une attention particulière portée au développement full-stack.",
+    "details": ["Développement web", "Gestion de projets", "Intégration", "Projets en équipe"]
+  },
+  {
+    "id": "stage-webmaster",
+    "title": "Stage webmaster",
+    "period": "Juin - Juillet 2022",
+    "startDate": "2022-06-01",
+    "endDate": "2022-07-31",
+    "location": "Level Up Tech Consulting",
+    "summary": "Stage de première année autour de WordPress, de la maintenance et de l'ajout de contenu.",
+    "description": "Ce stage m'a donné une première expérience professionnelle sur un site existant, avec des besoins concrets de maintenance, de contenu, de formation en ligne et de référencement.",
+    "details": ["Ajout de contenu avec Divi", "Création de formations avec Learndash", "Exercices interactifs avec H5P", "Newsletter avec Sendinblue", "Référencement avec Yoast"]
+  }
+]

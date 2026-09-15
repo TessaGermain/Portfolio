@@ -20,3 +20,9 @@ export interface Project {
   links?: ProjectLink[];
   featured?: boolean;
 }
+
+export interface SkillCloudItem {
+  label: string;
+  count: number;
+  weight: number;
+}

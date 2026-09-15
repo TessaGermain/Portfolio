@@ -17,7 +17,8 @@ module.exports = {
       },
       fontFamily: {
         title: ['ATypewriterForMe', 'ui-serif', 'Georgia', 'serif'],
-        body: ['Biko', 'ui-sans-serif', 'system-ui', 'sans-serif']
+        body: ['Inter', 'Segoe UI', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        accent: ['Biko', 'Inter', 'Segoe UI', 'ui-sans-serif', 'system-ui', 'sans-serif']
       },
       boxShadow: {
         glow: '0 24px 80px rgba(105, 48, 195, 0.28)'
