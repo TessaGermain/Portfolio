@@ -1,17 +1,155 @@
 [
   {
+    "id": "iterale",
+    "title": "Iterale",
+    "category": "development",
+    "date": "Janvier - Juillet 2026",
+    "duration": "environ 200h",
+    "context": "Projet annuel M2 en groupe",
+    "tools": [
+      "Hono",
+      "PostgreSQL",
+      "Drizzle ORM",
+      "Better Auth",
+      "Tailwind CSS",
+      "React",
+      "Vite",
+      "Temps réel"
+    ],
+    "summary": "Une plateforme pensée pour faciliter les échanges autour de différents assets (images, maquettes, designs...) et réduire les frictions entre designer et développeurs",
+    "description": "Le site permet de se connecter avec de nombreux comptes (google, figma, github...) et a été pensé pour réduire la friction entre développeurs et designers. Pour cela, les utilisateurs ont la possibilité de créer des boucles de feedback dans lesquelles ils peuvent ajouter autant d'assets qu'ils le souhaitent. Ils peuvent ensuite partagé ces boucles grâce à un magic link et laisser des commentaires en temps réel sur les boucles partagées avec eux. Il y a aussi un système de versioning qui permet de proposer plusieurs versions d'un même asset.",
+    "tasks": [
+      "Connexions via diverses plateformes implémentées avec Better Auth",
+      "Canva pour les assets et ajout des commentaires",
+      "Mise en place du versioning des assets"
+    ],
+    "image": null,
+    "links": [
+      {
+        "label": "Voir le projet",
+        "url": "https://app.iterale.com"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "comutitre",
+    "title": "Comutitre",
+    "category": "development",
+    "date": "15-19 Juin 2026",
+    "duration": "environ 40h",
+    "context": "Hackaton de M2",
+    "tools": [
+      "Spring Boot",
+      "PostgreSQL",
+      "Flyway",
+      "TanStack Start",
+      "Tailwind CSS",
+      "React",
+      "Vite",
+      "VoyageAI",
+      "Mistral",
+      "Resend",
+      "Temps réel"
+    ],
+    "summary": "Une plateforme pour guider au mieux les utilisateurs dans le choix de l'abonnement Navigo qui leur convient le mieux avec un backoffice complet pour les agents Île de France Mobilité. Projet réalisé dans le cadre du hackaton GES 2026 de M2",
+    "description": "Ce projet, réalisé dans le cadre d’un hackathon autour de la plateforme de souscription Comutitres pour Île-de-France Mobilités, consistait à repenser le parcours de souscription aux forfaits de transport. L’objectif était de proposer une expérience plus claire pour les usagers, depuis le choix du forfait jusqu’au paiement, tout en intégrant un back-office destiné aux agents IDF Mobilités pour faciliter le suivi des demandes et la vérification des pièces justificatives.",
+    "tasks": [
+      "Page d'accueil",
+      "Dashboard backoffice pour la gestion des abonnements",
+      "Tunnel de recommandation d'abonnements",
+      "Page FAQ"
+    ],
+    "image": "image/projet/comutitres.png",
+    "links": [
+      {
+        "label": "Voir le projet",
+        "url": "https://jgmcn.mathistassart.fr/"
+      }
+    ],
+    "featured": true
+  },
+  {
+    "id": "avenir",
+    "title": "Avenir",
+    "category": "development",
+    "date": "Octobre 2025 - Janvier 2026",
+    "duration": "environ 60h",
+    "context": "Projet étudiant en binôme",
+    "tools": [
+      "React",
+      "Temps réel",
+      "Event sourcing",
+      "Express",
+      "Clean Architecture",
+      "PostgreSQL"
+    ],
+    "summary": "Une plateforme bancaire permettant aux clients de gérer leurs comptes, leur épargne et leurs investissements en temps réel, tout en offrant aux équipes bancaires des outils d'administration et de suivi dédiés.",
+    "description": "Cette plateforme bancaire en ligne permet la gestion des comptes, de l'épargne, des investissements et des opérations courantes. Elle intègre également des espaces d'administration pour les directeurs et conseillers bancaires, afin de gérer les comptes clients, les crédits, les actions disponibles et les échanges avec les utilisateurs. L'ensemble repose sur une clean architecture, un système de communication en temps réel (notification, chat...) et une approche basée sur l'event sourcing.",
+    "tasks": [
+      "Page d'accueil",
+      "Dashboard backoffice pour la gestion des abonnements",
+      "Tunnel de recommandation d'abonnements",
+      "Page FAQ"
+    ],
+    "image": "image/projet/avenir_1.png",
+    "featured": true
+  },
+  {
+    "id": "fitness-api",
+    "title": "Fitness API",
+    "category": "development",
+    "date": "Juin 2025",
+    "duration": "environ 60h",
+    "context": "Projet étudiant en binôme",
+    "tools": ["Express", "Apollo", "GraphQL", "PostgreSQL"],
+    "summary": "API GraphQL dédiée à une plateforme fitness, permettant de gérer les utilisateurs, les salles de sport, les exercices et les challenges avec un système de gamification via des badges.",
+    "description": "Cette API GraphQL a été conçue pour structurer les fonctionnalités d’une plateforme fitness autour de plusieurs profils utilisateurs. Elle permet l’authentification par JWT, la gestion des rôles, l’administration des salles de sport, des équipements et des exercices, ainsi que la création et le suivi de challenges sportifs. Le projet intègre également un système de badges attribués selon des règles de progression.",
+    "tasks": [],
+    "image": null,
+    "featured": true
+  },
+  {
+    "id": "otk-cours",
+    "title": "OTK Cours",
+    "category": "development",
+    "date": "Juillet 2023 - Mars 2024",
+    "duration": "environ 200h",
+    "context": "Projet personnel",
+    "tools": ["Angular", "Express", "PostgreSQL"],
+    "summary": "Une plateforme pensée pour répondre aux besoins d'un professeur particulier pluridisciplinaire : déposer des exercices et corrections, créer des plannings de révision, gérer la facturation...",
+    "description": "",
+    "tasks": [
+      "Dashboard étudiant: dépôts et téléchargement d'exercices et de corrections, suivi des programmes de révision",
+      "Dashboard backoffice: gestion des étudiants, dépôts des cours, exercices et corrections, gestion de la facturation des cours, gestion des matières",
+      "Envoi par mail de la facture aux parents à la fin du mois"
+    ],
+    "image": "image/projet/OTK_Cours.jpg",
+    "featured": true
+  },
+  {
     "id": "jpmeaux",
     "title": "JPMeaux",
     "category": "development",
     "date": "Novembre - Décembre 2023",
     "duration": "environ 45h",
-    "context": "Projet scolaire en groupe",
+    "context": "Projet étudiant en groupe",
     "tools": ["Angular", "API", "PHP", "SQL"],
     "summary": "Site pour promouvoir et gérer la journée porte ouverte de la filière MMI de l'IUT de Meaux.",
     "description": "Le site se divise entre un espace visiteurs et un espace administrateurs. Les visiteurs peuvent consulter les informations de la JPO, découvrir la formation, parcourir une visite 3D et envoyer leurs retours. Les administrateurs gèrent les projets, les statistiques et les informations de contact.",
-    "tasks": ["Fonctionnalités API", "Page parcours", "Page retours", "Tris et filtres administrateur"],
+    "tasks": [
+      "Fonctionnalités API",
+      "Page parcours",
+      "Page retours",
+      "Tris et filtres administrateur"
+    ],
     "image": "image/projet/JPMeaux.png",
-    "links": [{ "label": "Voir le projet", "url": "http://sae501-salle317.alwaysdata.net" }],
+    "links": [
+      {
+        "label": "Voir le projet",
+        "url": "http://sae501-salle317.alwaysdata.net"
+      }
+    ],
     "featured": true
   },
   {
@@ -20,11 +158,16 @@
     "category": "development",
     "date": "Mars 2023",
     "duration": "environ 20h",
-    "context": "Projet scolaire en binome",
+    "context": "Projet étudiant en binôme",
     "tools": ["HTML", "SCSS", "JavaScript", "Three.js"],
     "summary": "Site informatif sur la calligraphie japonaise avec des elements interactifs en 3D.",
     "description": "Le projet associe recherche, exposition et experience web interactive. Les objets ont ete modelises avec Blender puis integres en Three.js pour permettre une navigation entre les elements de la boite de calligraphie.",
-    "tasks": ["Intégration du site", "Intégration 3D", "Interactions clavier", "Traduction anglaise"],
+    "tasks": [
+      "Intégration du site",
+      "Intégration 3D",
+      "Interactions clavier",
+      "Traduction anglaise"
+    ],
     "image": "image/projet/calligraphie.png",
     "featured": true
   },
@@ -34,111 +177,23 @@
     "category": "development",
     "date": "Décembre 2022",
     "duration": "environ 30h",
-    "context": "Projet scolaire en groupe",
+    "context": "Projet étudiant en groupe",
     "tools": ["HTML", "CSS", "JavaScript", "AJAX"],
     "summary": "Clicker game responsive sur le thème des chats.",
     "description": "Le joueur accumule des points, achète des bonus, débloque des succès et conserve sa progression. Les scores sont sauvegardés via une API et l'interface s'adapte aux différents écrans.",
-    "tasks": ["Page jeu", "Logique JavaScript", "SessionStorage", "Sauvegarde des scores"],
+    "tasks": [
+      "Page jeu",
+      "Logique JavaScript",
+      "SessionStorage",
+      "Sauvegarde des scores"
+    ],
     "image": "image/projet/catClicker.jpg",
-    "links": [{ "label": "Voir le projet", "url": "ressource/site/cat_clicker/index.html" }],
+    "links": [
+      {
+        "label": "Voir le projet",
+        "url": "ressource/site/cat_clicker/index.html"
+      }
+    ],
     "featured": true
-  },
-  {
-    "id": "floral",
-    "title": "Floral",
-    "category": "development",
-    "date": "Octobre 2022",
-    "duration": "environ 10h",
-    "context": "Projet scolaire en groupe",
-    "tools": ["HTML", "CSS", "Bootstrap", "JavaScript"],
-    "summary": "Site d'une boutique de fleurs fictive.",
-    "description": "Projet conçu pour explorer Bootstrap tout en conservant une direction artistique cohérente et une attention portée à l'accessibilité.",
-    "tasks": ["Identité graphique", "Page boutique", "Classes JavaScript", "Accessibilité"],
-    "image": "image/projet/floral.jpg",
-    "links": [{ "label": "Voir le projet", "url": "ressource/site/floral/boutique.html" }]
-  },
-  {
-    "id": "drag-and-drop",
-    "title": "Puzzle Drag & Drop",
-    "category": "development",
-    "date": "Septembre - Octobre 2022",
-    "duration": "environ 10h",
-    "context": "Projet personnel",
-    "tools": ["HTML", "CSS", "JavaScript"],
-    "summary": "Jeu de puzzle en plusieurs niveaux cree en Drag & Drop.",
-    "description": "Le joueur déplace des images dans une grille, vérifie son puzzle et recommence les cases incorrectes jusqu'à obtenir la composition complète.",
-    "tasks": ["Développement front", "Drag & Drop", "Vérification du puzzle", "Compteur"],
-    "image": "image/projet/drag&drop.jpg",
-    "links": [{ "label": "Voir le projet", "url": "ressource/site/Drag & Drop/Niveau_1/index.html" }]
-  },
-  {
-    "id": "bubble-wave",
-    "title": "Bubble Wave",
-    "category": "development",
-    "date": "Mars - Avril 2022",
-    "duration": "environ 30h",
-    "context": "Projet scolaire individuel",
-    "tools": ["HTML", "CSS", "PHP", "SQL", "JavaScript"],
-    "summary": "Site vitrine et espace client pour un salon de coiffure fictif.",
-    "description": "Le site gère des rendez-vous, des comptes clients et employés, ainsi qu'un système de réduction après plusieurs passages.",
-    "tasks": ["Identité graphique", "Maquettes", "Base de données", "Connexion", "Gestion des rendez-vous"],
-    "image": "image/projet/bubbleWave.jpg"
-  },
-  {
-    "id": "dam-cat",
-    "title": "Maquette d'un jeu de dame mobile",
-    "category": "design",
-    "date": "Novembre 2022",
-    "duration": "4h",
-    "context": "Projet scolaire en binome",
-    "tools": ["Figma"],
-    "summary": "Maquette d'un jeu de dame mobile sur le thème des chats.",
-    "description": "Interface mobile complète avec accueil, jeu, victoire, défis quotidiens, paramètres, succès, événement et statistiques.",
-    "tasks": ["Pages d'accueil", "Pages de jeu", "Défis quotidiens", "Page événement"],
-    "image": "image/projet/damCat.jpg",
-    "links": [{ "label": "Voir le PDF", "url": "ressource/pdf/DamCat.pdf" }],
-    "featured": true
-  },
-  {
-    "id": "paper-game",
-    "title": "Paper Game",
-    "category": "design",
-    "date": "Octobre 2022",
-    "duration": "environ 6h",
-    "context": "Projet scolaire individuel",
-    "tools": ["InDesign", "Illustrator", "Photoshop"],
-    "summary": "Creation d'une charte graphique pour un magasin de jeu fictif.",
-    "description": "Recherche typographique, création de logo, déclinaisons et mockups pour construire une identité visuelle cohérente.",
-    "tasks": ["Recherche de police", "Logo typographique", "Couleurs", "Charte graphique"],
-    "image": "image/projet/paperGame.jpg",
-    "links": [{ "label": "Voir le PDF", "url": "ressource/pdf/PaperGame.pdf" }]
-  },
-  {
-    "id": "fest4game",
-    "title": "Affiche du Fest4Game 2022",
-    "category": "design",
-    "date": "Février 2022",
-    "duration": "environ 20h",
-    "context": "Projet professionnel",
-    "tools": ["Photoshop"],
-    "summary": "Creation de l'affiche d'un salon de jeux et jeux video.",
-    "description": "Affiche realisee a partir d'echanges client, de contraintes d'information et d'une direction graphique orientee jeu.",
-    "tasks": ["Brief client", "Elements graphiques", "Composition", "Iterations"],
-    "image": "image/projet/fest4Game.jpg",
-    "featured": true
-  },
-  {
-    "id": "on-my-way",
-    "title": "On My Way",
-    "category": "design",
-    "date": "Octobre 2021",
-    "duration": "environ 5h",
-    "context": "Projet scolaire individuel",
-    "tools": ["Adobe XD"],
-    "summary": "Maquettes de trois pages d'un site e-commerce de chaussures.",
-    "description": "Analyse de concurrence, personas et maquettes adaptées aux cibles pour un parcours d'achat clair.",
-    "tasks": ["Veille concurrentielle", "Personas", "Accueil", "Produit", "Connexion"],
-    "image": "image/projet/onMyWay.jpg",
-    "links": [{ "label": "Voir le PDF", "url": "ressource/pdf/OnMyWay.pdf" }]
   }
 ]
