@@ -2,21 +2,20 @@ import { Component } from '@angular/core';
 import { PortfolioButtonComponent } from '../../shared/components/portfolio-button.component';
 import { SectionTitleComponent } from '../../shared/components/section-title.component';
 import { HeroBannerComponent } from './components/hero-banner.component';
-import { SkillsCloudSectionComponent } from './components/skills-cloud-section.component';
 import { TimelineSectionComponent } from './components/timeline-section.component';
 import { UsefulLinksSectionComponent } from './components/useful-links-section.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [PortfolioButtonComponent, SectionTitleComponent, HeroBannerComponent, SkillsCloudSectionComponent, TimelineSectionComponent, UsefulLinksSectionComponent],
+  imports: [PortfolioButtonComponent, SectionTitleComponent, HeroBannerComponent, TimelineSectionComponent, UsefulLinksSectionComponent],
   template: `
     <main>
       <app-hero-banner />
 
       <app-useful-links-section />
 
-      <app-skills-cloud-section />
+      <!-- <app-skills-cloud-section /> -->
 
       <app-timeline-section />
 

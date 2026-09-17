@@ -28,7 +28,20 @@ export class ProjectsService {
 
   getFilters(category: ProjectCategory): Observable<string[]> {
     return this.getProjectsByCategory(category).pipe(
-      map((projects) => [...new Set(projects.flatMap((project) => project.tools))].sort())
+      map((projects) => {
+        const counts = projects.reduce((filters, project) => {
+          new Set(project.tools).forEach((tool) => {
+            filters.set(tool, (filters.get(tool) ?? 0) + 1);
+          });
+
+          return filters;
+        }, new Map<string, number>());
+
+        return [...counts.entries()]
+          .filter(([, count]) => count > 2)
+          .map(([tool]) => tool)
+          .sort();
+      })
     );
   }
 
