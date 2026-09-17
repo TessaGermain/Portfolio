@@ -3,14 +3,14 @@
     "id": "github",
     "label": "GitHub",
     "description": "Retrouver mes projets et mon code.",
-    "url": null,
+    "url": "https://github.com/TessaGermain",
     "order": 1
   },
   {
     "id": "linkedin",
     "label": "LinkedIn",
     "description": "Me suivre et échanger côté professionnel.",
-    "url": null,
+    "url": "https://www.linkedin.com/in/tessa-germain-a7b462256/",
     "order": 2
   },
   {
