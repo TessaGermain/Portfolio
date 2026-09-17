@@ -26,12 +26,6 @@ export class ProjectsService {
     );
   }
 
-  getFilters(category: ProjectCategory): Observable<string[]> {
-    return this.getProjectsByCategory(category).pipe(
-      map((projects) => [...new Set(projects.flatMap((project) => project.tools))].sort())
-    );
-  }
-
   getSkillCloud(): Observable<SkillCloudItem[]> {
     return this.projects$.pipe(
       map((projects) => {
